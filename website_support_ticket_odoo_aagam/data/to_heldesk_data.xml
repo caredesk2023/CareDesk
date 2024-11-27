@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="aagam_helpdesk_stage_new" model="aagam.helpdesk.stage">
+            <field name="name">New</field>
+            <field name="sequence">0</field>
+            <field name="team_ids" eval="[(4, ref('aagam_helpdesk_ticket_customer_team'))]"/>
+            <field name="is_close" eval="False"/>
+            <field name="mail_template_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_new_create"/>
+        </record>
+        <record id="helpdesk_sla_2_days_start" model="aagam.helpdesk.ticket.sla.policy">
+            <field name="name">2 days to start</field>
+            <field name="team_id" ref="aagam_helpdesk_ticket_customer_team"/>
+            <field name="helpdesk_stage_id" ref="aagam_helpdesk_stage_inprogress"/>
+            <field name="days">2</field>
+        </record>
+        <record id="helpdesk_sla_7_days_finish" model="aagam.helpdesk.ticket.sla.policy">
+            <field name="name">7 days to finish</field>
+            <field name="team_id" ref="aagam_helpdesk_ticket_customer_team"/>
+            <field name="helpdesk_stage_id" ref="aagam_helpdesk_stage_solved"/>
+            <field name="days">7</field>
+        </record>
+        <record id="res_partner_12" model="res.partner">
+            <field name="name">Brandon Freeman</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">4760</field>
+            <field name="email">brandon.freeman55@example.com</field>
+            <field name="activity_exception_icon">4557 De Silva St</field>
+        </record>
+        <record id="res_partner_14" model="res.partner">
+            <field name="name">Azure Interior</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">6760</field>
+            <field name="email">azure.Interior24@example.com</field>
+            <field name="activity_exception_icon">4557 De Silva St</field>
+        </record>
+        <record id="res_partner_main1" model="res.partner">
+            <field name="name">Colleen Diaz</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">6760</field>
+            <field name="email">colleen.diaz83@example.com</field>
+            <field name="activity_exception_icon">4557 De Silva St</field>
+        </record>
+
+        <record id="res_partner_4" model="res.partner">
+            <field name="name">Oscar Morgan</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">6760</field>
+            <field name="email">oscar.morgan11@example.com</field>
+            <field name="activity_exception_icon">317 Fairchild Dr</field>
+        </record>
+
+        <record id="res_partner_3" model="res.partner">
+            <field name="name">Soham Palmer</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">8846</field>
+            <field name="email">soham.palmer15@example.com</field>
+            <field name="activity_exception_icon">317 Fairchild Dr</field>
+        </record>
+
+        <record model="res.partner" id="res_partner_1a">
+            <field name="name">Daniel R T-O</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">8760</field>
+            <field name="email">ready.mat28@example.com</field>
+            <field name="activity_exception_icon">7500 W Linne Road</field>
+        </record>
+        <record id="res_partner_17" model="res.partner">
+            <field name="name">Edith Sanchez</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">8946</field>
+            <field name="email">edith.sanchez68@example.com</field>
+            <field name="activity_exception_icon">7500 W Linne Road</field>
+        </record>
+        <record id="res_partner_25" model="res.partner">
+            <field name="name">Julie Richards</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">1246</field>
+            <field name="email">julie.richards84@example.com</field>
+            <field name="activity_exception_icon">Test partner</field>
+        </record>
+
+        <record id="res_partner_28" model="res.partner">
+            <field name="name">Kim Snyder</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">1246</field>
+            <field name="email">kim.snyder96@example.com</field>
+            <field name="activity_exception_icon">7500 W Linne Road</field>
+        </record>
+
+        <!--todo####################################################-Users-########################################################################-->
+
+        <record id="user_demo" model="res.users">
+            <field name="name">Toni Rhodes</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">6760</field>
+            <field name="email">toni.rhodes11@example.com</field>
+            <field name="login">ija34n</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_4"></field>
+            <field name="activity_exception_icon">1611 Peony Dr</field>
+        </record>
+
+        <record id="res_user_root_12" model="res.users">
+            <field name="name">Ron Gibson</field>
+            <field name="active" eval="True"/>
+            <field name="bank_account_count">6760</field>
+            <field name="email">ron.gibson76@example.com</field>
+            <field name="login">afjf4</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="activity_exception_icon">1839 Arbor Way</field>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_12"></field>
+        </record>
+
+        <!--todo####################################################-Users-#######################################################################-->
+
+        <record id="helpdesk_ticket_1" model="aagam.helpdesk.ticket">
+            <field name="name">Kitchen collapsing</field>
+            <field name="res_user_id" ref="base.user_admin"/>
+            <field name="priority">3</field>
+            <field name="helpdesk_team_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_customer_team"/>
+            <field name="helpdesk_ticket_type_id"
+                   ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_software"/>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_12"/>
+            <field name="helpdesk_stage_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_stage_inprogress"/>
+            <field name="description">Kitchen Collapsing Description</field>
+        </record>
+        <record id="helpdesk_ticket_2" model="aagam.helpdesk.ticket">
+            <field name="name">Where can I download a catalog ?</field>
+            <field name="res_user_id" ref="base.user_admin"/>
+            <field name="priority">0</field>
+            <field name="helpdesk_team_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_customer_team"/>
+            <field name="helpdesk_ticket_type_id"
+                   ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_software"/>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_14"/>
+            <field name="helpdesk_stage_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_stage_inprogress"/>
+            <field name="description">Download catelog</field>
+        </record>
+
+        <record id="helpdesk_ticket_3" model="aagam.helpdesk.ticket">
+            <field name="name">Warranty</field>
+            <field name="helpdesk_team_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_customer_team"/>
+            <field name="res_user_id" ref="base.user_admin"/>
+            <field name="helpdesk_ticket_type_id"
+                   ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_software"/>
+            <field name="priority">2</field>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_main1"/>
+            <field name="helpdesk_stage_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_stage_new"/>
+            <field name="description">
+                Hello,
+
+                I would like to know what kind of warranties you are offering for your products.
+
+                Here is my contact number: 123456789
+
+                Thank you,
+                Chester Reed
+            </field>
+        </record>
+
+        <!-- fail the sla status -->
+        <function model="helpdesk.sla.status" name="write">
+            <value model="aagam.helpdesk.ticket"
+                   eval="obj().search([('id', '=', ref('website_support_ticket_odoo_aagam.helpdesk_ticket_3'))]).sla_status_ids.ids"/>
+            <value eval="{'deadline': DateTime.now() - relativedelta(days=2)}"/>
+        </function>
+
+        <record id="helpdesk_ticket_4" model="aagam.helpdesk.ticket">
+            <field name="name">Wood Treatment</field>
+            <field name="helpdesk_team_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_customer_team"/>
+            <field name="res_user_id" ref="website_support_ticket_odoo_aagam.user_demo"/>
+            <field name="helpdesk_ticket_type_id"
+                   ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_software"/>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_4"/>
+            <field name="helpdesk_stage_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_stage_inprogress"/>
+            <field name="description">
+                Hello,
+
+                Is the wood from your furniture treated with a particular product? What would you recommend to maintain
+                the quality of a dining table?
+
+                Your assistance would be greatly appreciated.
+
+                Thanks in Advance,
+                Azure Interior
+            </field>
+        </record>
+
+        <record id="helpdesk_ticket_5" model="aagam.helpdesk.ticket">
+            <field name="name">Chair dimensions</field>
+            <field name="helpdesk_team_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_customer_team"/>
+            <field name="res_user_id" ref="website_support_ticket_odoo_aagam.res_user_root_12"/>
+            <field name="helpdesk_ticket_type_id"
+                   ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_software"/>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_12"/>
+            <field name="helpdesk_stage_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_stage_solved"/>
+            <field name="description">
+                Can you please tell me the dimensions of your “Office chair Black”? Also I am unable to find the
+                information on your official site.
+
+                I look forward to your kind response.
+
+                Thank you!
+            </field>
+        </record>
+        <record id="helpdesk_ticket_6" model="aagam.helpdesk.ticket">
+            <field name="name">Lost key</field>
+            <field name="helpdesk_team_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_customer_team"/>
+            <field name="res_user_id" ref="base.user_admin"/>
+            <field name="helpdesk_ticket_type_id"
+                   ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_software"/>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_3"/>
+            <field name="helpdesk_stage_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_stage_inprogress"/>
+            <field name="description">
+                Hello,
+
+                I bought a locker a few years ago and I, unfortunately, lost the key. I cannot retrieve the documents I
+                had left in there without damaging the furniture item. What solution do you offer?
+
+                Thanks in advance for your help.
+                Kind regards,
+                Gemini Furniture
+            </field>
+        </record>
+        <record id="helpdesk_ticket_7" model="aagam.helpdesk.ticket">
+            <field name="name">Furniture delivery</field>
+            <field name="helpdesk_team_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_customer_team"/>
+            <field name="res_user_id" ref="base.user_admin"/>
+            <field name="helpdesk_ticket_type_id"
+                   ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_software"/>
+            <field name="partner_id" ref="res_partner_17"/>
+            <field name="helpdesk_stage_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_stage_cancelled"/>
+            <field name="description">
+                Hi,
+
+                I was wondering if you were delivering the furniture or if we needed to pick it up at your warehouse?
+                If you do take care of the delivery, are there any extra costs?
+
+                Regards,
+                Deco Addict
+            </field>
+        </record>
+        <record id="helpdesk_ticket_8" model="aagam.helpdesk.ticket">
+            <field name="name">Cabinets in kit</field>
+            <field name="helpdesk_team_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_customer_team"/>
+            <field name="res_user_id" ref="base.user_admin"/>
+            <field name="helpdesk_ticket_type_id"
+                   ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_software"/>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_25"/>
+            <field name="helpdesk_stage_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_stage_new"/>
+            <field name="description">
+                Hello,
+
+                I would like to know if your cabinets come in a kit? They seem quite large and I am not sure they will
+                fit through my front door.
+
+                Thank you for your help.
+                Best regards,
+                Jackson Group
+            </field>
+        </record>
+
+        <record id="helpdesk_ticket_9" model="aagam.helpdesk.ticket">
+            <field name="name">Missing user manual</field>
+            <field name="helpdesk_team_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_customer_team"/>
+            <field name="res_user_id" ref="base.user_admin"/>
+            <field name="helpdesk_ticket_type_id"
+                   ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_software"/>
+            <field name="partner_id" ref="website_support_ticket_odoo_aagam.res_partner_28"/>
+            <field name="helpdesk_stage_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_stage_new"/>
+            <field name="description">
+                Hello,
+
+                I recently purchased one of your wardrobes in a kit. Unfortunately, I didn’t receive the user manual, so
+                I cannot assemble the item. Could you send me this document?
+
+                Thank you.
+                Kind regards,
+            </field>
+        </record>
+
+        <record id="aagam_helpdesk_stage_new" model="aagam.helpdesk.stage">
+            <field name="name">New</field>
+            <field name="sequence">0</field>
+            <field name="team_ids" eval="[(4, ref('aagam_helpdesk_ticket_customer_team'))]"/>
+            <field name="is_close" eval="False"/>
+            <field name="mail_template_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_new_create"/>
+        </record>
+    </data>
+</odoo>

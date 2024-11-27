@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="aagam_helpdesk_ticket_type_software" model="aagam.helpdesk.ticket.type">
+        <field name="name">Software</field>
+    </record>
+
+    <record id="aagam_helpdesk_ticket_type_updation" model="aagam.helpdesk.ticket.type">
+        <field name="name">Update</field>
+    </record>
+    
+    <record id="helpdesk_ticket_tag_crm" model="aagam.helpdesk.ticket.tag">
+        <field name="name">CRM</field>
+    </record>
+
+    <record id="helpdesk_ticket_tag_website" model="aagam.helpdesk.ticket.tag">
+        <field name="name">Website</field>
+    </record>
+
+    <record id="helpdesk_ticket_tag_service" model="aagam.helpdesk.ticket.tag">
+        <field name="name">Service</field>
+    </record>
+
+    <record id="helpdesk_ticket_tag_repair" model="aagam.helpdesk.ticket.tag">
+        <field name="name">Repair</field>
+    </record>
+    
+      <!-- SLA's -->
+    <record id="helpdesk_sla_2_days_start" model="aagam.helpdesk.ticket.sla.policy">
+        <field name="name">2 days to start</field>
+        <field name="team_id" ref="aagam_helpdesk_ticket_customer_team"/>
+        <field name="helpdesk_stage_id" ref="aagam_helpdesk_stage_inprogress"/>
+        <field name="days">2</field>
+    </record>
+
+    <record id="helpdesk_sla_7_days_finish" model="aagam.helpdesk.ticket.sla.policy">
+        <field name="name">7 days to finish</field>
+        <field name="team_id" ref="aagam_helpdesk_ticket_customer_team"/>
+        <field name="helpdesk_stage_id" ref="aagam_helpdesk_stage_solved"/>
+        <field name="days">7</field>
+    </record>
+
+    <!-- Share Button in action menu -->
+    <record id="model_helpdesk_ticket_action_share" model="ir.actions.server">
+        <field name="name">Share</field>
+        <field name="model_id" ref="website_support_ticket_odoo_aagam.model_aagam_helpdesk_ticket"/>
+        <field name="binding_model_id" ref="website_support_ticket_odoo_aagam.model_aagam_helpdesk_ticket"/>
+        <field name="binding_view_types">form</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_share()</field>
+    </record>
+</odoo>

@@ -1,0 +1,2899 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_support_ticket_odoo_aagam
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-24 14:05+0000\n"
+"PO-Revision-Date: 2024-01-24 14:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:mail.template,body_html:website_support_ticket_odoo_aagam.ticket_template
+msgid ""
+"\n"
+"                   \n"
+"              % if object.partner_name :\n"
+"                    <p>Dear ${object.partner_name},</p>\n"
+"                % endif\n"
+"             <p>Thank you for submitting a support ticket to us, we will get back to your shortly</p>\n"
+"           \n"
+"            <p>Kindly Regards,</p>\n"
+"                    \n"
+"          "
+msgstr ""
+"\n"
+"                   \n"
+"              % if object.partner_name :\n"
+"                    <p>Dear ${object.partner_name},</p>\n"
+"                % endif\n"
+"             <p>Gracias por enviarnos un ticket de soporte, nos pondremos en contacto con usted en breve.</p>\n"
+"           \n"
+"            <p>Saludos cordiales,</p>\n"
+"                    \n"
+"          "
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.index
+msgid "% Customer Satisfaction"
+msgstr "% Satisfacción del cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "&amp;times;"
+msgstr "&amp;tiempos;"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+msgid "1 star"
+msgstr "1 estrella"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+msgid "2 stars"
+msgstr "2 estrellas"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+msgid "3 stars"
+msgstr "3 estrellas"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "<b>Customer Rating</b>"
+msgstr "<b>Calificación del cliente</b>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid ""
+"<br/>\n"
+"                                        Priority:"
+msgstr ""
+"<br/>\n"
+"                                        Prioridad:"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid ""
+"<br/>\n"
+"                                        Project :"
+msgstr ""
+"<br/>\n"
+"                                        Proyecto :"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid ""
+"<br/>\n"
+"                                        Tags :"
+msgstr ""
+"<br/>\n"
+"                                        Etiquetas :"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid ""
+"<br/>\n"
+"                                        Ticket Type:"
+msgstr ""
+"<br/>\n"
+"                                        Tipo de ticket:"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:mail.template,body_html:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_new_create
+msgid ""
+"<div>\n"
+"     Dear <t t-out=\"object.sudo().partner_id.name or 'Madam/Sir'\">Azure Interior</t>,<br/><br/>\n"
+"    Your request\n"
+"    <a t-att-href=\"(object.get_portal_url() )\"><t t-out=\"object.name or ''\"/></a>\n"
+"    has been received and is being reviewed by our <t t-out=\"object.helpdesk_team_id.name or ''\"/> team.\n"
+"    The reference of your ticket is <t t-out=\"object.id or ''\"/>.<br/><br/>\n"
+"\n"
+"    <div style=\"text-align: center; margin: 16px 0px 16px 0px;\">\n"
+"        <a style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\" t-att-href=\"(object.get_portal_url() )\">View the ticket</a><br/>\n"
+"    </div>\n"
+"\n"
+"    To add additional comments, reply to this email.<br/><br/>\n"
+"\n"
+"    Thank you,<br/><br/>\n"
+"    <t t-out=\"object.helpdesk_team_id.name or 'Helpdesk' \"> Helpdesk</t> Team.\n"
+"</div>\n"
+"        "
+msgstr ""
+"<div>\n"
+"     Estimado <t t-out=\"object.sudo().partner_id.name or 'Madam/Sir'\">Azure Interior</t>,<br/><br/>\n"
+"    Your request\n"
+"    <a t-att-href=\"(object.get_portal_url() )\"><t t-out=\"object.name or ''\"/></a>\n"
+"    ha sido recibida y está siendo revisada por nuestro <t t-out=\"object.helpdesk_team_id.name or ''\"/> equipo.\n"
+"    La referencia de su ticket es <t t-out=\"object.id or ''\"/>.<br/><br/>\n"
+"\n"
+"    <div style=\"text-align: center; margin: 16px 0px 16px 0px;\">\n"
+"        <a style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\" t-att-href=\"(object.get_portal_url() )\">Ver el ticket</a><br/>\n"
+"    </div>\n"
+"\n"
+"    Para añadir comentarios adicionales, responda a este correo electrónico.<br/><br/>\n"
+"\n"
+"    Gracias,<br/><br/>\n"
+"    <t t-out=\"object.helpdesk_team_id.name or 'Helpdesk' \"> Helpdesk</t> Team.\n"
+"</div>\n"
+"        "
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid ""
+"<em class=\"text-muted\">\n"
+"                                    <small>No description</small>\n"
+"                                </em>"
+msgstr ""
+"<em class=\"text-muted\">\n"
+"                                    <small>Sin descripción</small>\n"
+"                                </em>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.index
+msgid ""
+"<i class=\"fa fa-arrow-circle-right \"/>\n"
+"                                                        See the feedbacks"
+msgstr ""
+"<i class=\"fa fa-arrow-circle-right \"/>\n"
+"                                                        Ver los comentarios"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_success
+msgid ""
+"<i class=\"fa fa-check-circle fa-2x text-success\" role=\"img\" aria-"
+"label=\"Success\" title=\"Success\"/>"
+msgstr ""
+"<i class=\"fa fa-check-circle fa-2x text-success\" role=\"img\" aria-"
+"label=\"Éxito\" title=\"Éxito\"/>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.index
+msgid ""
+"<i class=\"fa fa-envelope\"/>\n"
+"                                                    Email :"
+msgstr ""
+"<i class=\"fa fa-envelope\"/>\n"
+"                                                    Correo electrónico :"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "<small class=\"text-right\">Status:</small>"
+msgstr "<small class=\"text-right\">Estado:</small>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid ""
+"<small>\n"
+"                            <b>Close this ticket</b>\n"
+"                        </small>"
+msgstr ""
+"<small>\n"
+"                            <b>Cerrar este ticket</b>\n"
+"                        </small>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid ""
+"<small>\n"
+"                            If the issue has been solved, you can close the request.\n"
+"                        </small>"
+msgstr ""
+"<small>\n"
+"                            Si el problema se ha resuelto, puede cerrar la solicitud.\n"
+"                        </small>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+msgid "<small>#</small>"
+msgstr "<small>#</small>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban
+msgid ""
+"<span class=\"fa fa-clock-o\" title=\"Deadline\" role=\"img\" aria-"
+"label=\"Deadline\"/>"
+msgstr ""
+"<span class=\"fa fa-clock-o\" title=\"Fecha límite\" role=\"img\" aria-"
+"label=\"Fecha límite\"/>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_res_config_form_inherit_helpdesk
+msgid ""
+"<span class=\"o_form_label\">\n"
+"                                             Tickets Attachment\n"
+"                                        </span>"
+msgstr ""
+"<span class=\"o_form_label\">\n"
+"                                             Tickets Adjuntos\n"
+"                                        </span>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "<strong class=\"col-lg-2\">Assigned to</strong>"
+msgstr "<strong class=\"col-lg-2\">Asignado a</strong>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "<strong class=\"col-lg-2\">Attachments</strong>"
+msgstr "<strong class=\"col-lg-2\">Archivos adjuntos</strong>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "<strong class=\"col-lg-2\">Description</strong>"
+msgstr "<strong class=\"col-lg-2\">Descripción</strong>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "<strong class=\"col-lg-2\">Managed by</strong>"
+msgstr "<strong class=\"col-lg-2\">Gestionado por</strong>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "<strong class=\"col-lg-2\">Reported by</strong>"
+msgstr "<strong class=\"col-lg-2\">Reportado por</strong>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "<strong class=\"col-lg-2\">Reported on</strong>"
+msgstr "<strong class=\"col-lg-2\">Reportado el</strong>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "<strong class=\"col-lg-2\">Ticket Number</strong>"
+msgstr "<strong class=\"col-lg-2\">Número de ticket</strong>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_defaults
+msgid ""
+"A Python dictionary that will be evaluated to provide default values when "
+"creating new records for this alias."
+msgstr ""
+"Un diccionario Python que se evaluará para proporcionar valores por defecto "
+"cuando crear nuevos registros para este alias."
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_form
+msgid "Accept Emails From"
+msgstr "Aceptar correos electrónicos de"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__access_warning
+msgid "Access warning"
+msgstr "Advertencia de acceso"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__account_detail
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+msgid "Account Invoice"
+msgstr "Factura/s de la cuenta"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_needaction
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_needaction
+msgid "Action Needed"
+msgstr "Accion necesaria"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel__active
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__active
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__active
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category__active
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__active
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Excepción de actividad de decoración"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_state
+msgid "Activity State"
+msgstr "Estado de actividad"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icono de tipo de actividad"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_id
+msgid "Alias"
+msgstr "Alias"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_contact
+msgid "Alias Contact Security"
+msgstr "Alias Seguridad de contactos"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_name
+msgid "Alias Name"
+msgstr "Nombre del alias"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_domain
+msgid "Alias domain"
+msgstr "Alias del dominio"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_model_id
+msgid "Aliased Model"
+msgstr "Modelo alternativo"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__priority_new__0
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_sla_policy__priority__0
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+#, python-format
+msgid "All"
+msgstr "Todos"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.helpdesk_ticket_action_main
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.helpdesk_ticket_menu_all
+msgid "All Tickets"
+msgstr "Todos los Tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_res_config_settings__is_attachment
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_res_config_form_inherit_helpdesk
+msgid "Allow Attachment"
+msgstr "Permitir adjuntar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__allow_timesheet
+msgid "Allow Timesheet"
+msgstr "Permitir hoja de trabajo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__allow_portal_ticket_closing
+msgid "Allow customers to close their tickets"
+msgstr "Permitir a los clientes cerrar sus entradas"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea analítica"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_form
+msgid "Apply on"
+msgstr "Aplicar en"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban
+msgid "Archive"
+msgstr "Archivar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk__stage_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_channel_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_channel_search
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_stage_search
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_category_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_category_search
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_tag_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_tag_search
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_search
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Are you sure you wish to proceed?"
+msgstr "¿Está seguro de que desea continuar?"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_form
+msgid "Assign To Users"
+msgstr "Asignar a usuarios"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Assign User"
+msgstr "Asignar usuario"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+msgid "Assign to me"
+msgstr "Asignarme a mí"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Assigned"
+msgstr "Asignado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__assigned_date
+msgid "Assigned Date"
+msgstr "Fecha asignada"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Assigned to"
+msgstr "Asignado a"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__res_user_id
+msgid "Assigned user"
+msgstr "Usuario asignado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_sla_policy__target_type__assigning
+msgid "Assigning Ticket"
+msgstr "Asignación de Ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__attachment_ids
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+msgid "Attachment"
+msgstr "Archivo adjunto"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_attachment_count
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_attachment_count
+msgid "Attachment Count"
+msgstr "Cantidad de Adjuntos"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_form
+msgid "Avatar"
+msgstr "Avatar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.team_rating_progress_data
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Average"
+msgstr "Promedio"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.team_rating_progress_data
+msgid "Bad"
+msgstr "Mal"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_team__assigning_method__balanced
+msgid "Balanced"
+msgstr "Equilibrado"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/models/aagam_helpdesk_ticket.py:0
+#, python-format
+msgid "Blocked"
+msgstr "Bloqueado"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.helpdesk_ticket_category_menu
+msgid "Categories"
+msgstr "Categorías"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__helpdesk_category_ids
+msgid "Category"
+msgstr "Categoría"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__channel_id
+msgid "Channel"
+msgstr "Canal"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.aagam_helpdesk_channel_action
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.helpdesk_ticket_channel_menu
+msgid "Channels"
+msgstr "Canales"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_search
+msgid ""
+"Check status of previously opened tickets. We provide archives and history "
+"of all support your requests compare with responses."
+msgstr ""
+"Compruebe el estado de las tickets abiertos con anterioridad. Proporcionamos"
+" archivos e historial de todo el soporte que sus solicitudes tienen en "
+"comparación con las respuestas."
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__close_ticket_date
+msgid "Close Ticket"
+msgstr "Cerrar Ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid ""
+"Close the\n"
+"                                    ticket"
+msgstr ""
+"Cerrar el\n"
+"                                    ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Close ticket"
+msgstr "Cerrar ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__closed
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__closed
+#, python-format
+msgid "Closed"
+msgstr "Cerrado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__closed_date
+msgid "Closed Date"
+msgstr "Fecha de cierre"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+#, python-format
+msgid "Closed Tickets"
+msgstr "Tickets cerrados"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__closed_by_partner
+msgid "Closed by Partner"
+msgstr "Cerrado por Cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__is_close
+msgid "Closing Stage"
+msgstr "Etapa final"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__color
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__color
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__color
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__color
+msgid "Color Index"
+msgstr "Índice de color"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__kanban_state_label
+msgid "Column Status"
+msgstr "Estado de la columna"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__comment
+msgid "Comment"
+msgstr "Comentario"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel__company_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__company_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__company_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category__company_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__company_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__company_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_res_config_settings__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Company:"
+msgstr "Compañía:"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.helpdesk_ticket_configuration
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_form
+msgid "Configure domain name"
+msgstr "Configurar el nombre de dominio"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__partner_id
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__create_date
+#, python-format
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Create Date:"
+msgstr "Fecha de creación:"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/models/aagam_helpdesk_ticket.py:0
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+#, python-format
+msgid "Create Invoice"
+msgstr "Crear factura"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__create_new_bool
+msgid "Create New Ticket ?"
+msgstr "Crear nuevo ticket ?"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/models/aagam_helpdesk_ticket.py:0
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+#, python-format
+msgid "Create Task"
+msgstr "Crear tarea"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+msgid "Create Ticket"
+msgstr "Crear Ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.actions.act_window,help:website_support_ticket_odoo_aagam.helpdesk_ticket_action_main
+msgid "Create your first ticket."
+msgstr "Cree su primer ticket."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel__create_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__create_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__create_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category__create_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__create_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__create_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__create_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_type__create_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__create_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel__create_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__create_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category__create_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__create_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__create_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__create_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_type__create_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__create_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Creation Date"
+msgstr "Fecha de creación"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Current Month"
+msgstr "Mes en curso"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Current Week"
+msgstr "Semana en curso"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Current Year"
+msgstr "Año en curso"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Custom"
+msgstr "Personalizado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_bounced_content
+msgid "Custom Bounced Message"
+msgstr "Mensaje personalizado rechazado"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Custom Date"
+msgstr "Fecha personalizada"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Customer Name"
+msgstr "Nombre del cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__access_url
+msgid "Customer Portal URL"
+msgstr "URL del portal del cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__priority_new
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Customer Rating"
+msgstr "Calificación del cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Customer Replied"
+msgstr "Respuesta del cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.team_rating_data
+msgid "Customer Satisfaction"
+msgstr "Satisfacción del cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Customer:"
+msgstr "Cliente:"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_filter_stage_dashboard.js:0
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.helpdesk_ticket_dashboard_menu
+#, python-format
+msgid "Dashboard"
+msgstr "Tablero"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+msgid "Date"
+msgstr "Fecha"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Date:"
+msgstr "Fecha:"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__days
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__time_days
+msgid "Days"
+msgstr "Días"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__deadline
+msgid "Deadline"
+msgstr "Fecha límite"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__project_id
+msgid "Default Project"
+msgstr "Proyecto por defecto"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_defaults
+msgid "Default Values"
+msgstr "Valores por defecto"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban
+msgid "Delete"
+msgstr "Borrar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__description
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__description
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Description"
+msgstr "Descripción"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_form
+msgid "Description of the policy..."
+msgstr "Descripción de la póliza..."
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Discard"
+msgstr "Descartar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel__display_name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__display_name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__display_name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category__display_name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__display_name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__display_name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__display_name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_type__display_name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__display_name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__portal_show_rating
+msgid "Display Rating on Customer Portal"
+msgstr "Mostrar valoración en el portal del cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban
+msgid "Dropdown menu"
+msgstr "Menú desplegable"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Duration"
+msgstr "Duración"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_error_message
+msgid "ERROR !!"
+msgstr ""
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban
+msgid "Edit"
+msgstr "Editar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__partner_email
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__email_alias_id
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_form
+msgid "Email Alias"
+msgstr "Alias de correo electrónico"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__mail_template_id
+msgid "Email Template"
+msgstr "Plantilla de correo electrónico"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__use_alias
+msgid "Email alias"
+msgstr "Alias de correo electrónico"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__email_cc
+msgid "Email cc"
+msgstr "Correo electrónico cc"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Email:"
+msgstr "Correo electrónico:"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Employee:"
+msgstr "Empleado:"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__exceeded_days
+msgid "Excedeed Working Days"
+msgstr "Días laborables adicionales"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Excellent"
+msgstr "Excelente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__exclude_stage_ids
+msgid "Exclude Stages"
+msgstr "Excluir etapas"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__helpdesk_sla_status__status__failed
+msgid "Failed"
+msgstr "Fallido"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__sla_fail
+msgid "Failed SLA Policy"
+msgstr "Política SLA fallida"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Filter Option :"
+msgstr "Opción de filtro :"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.helpdesk_ticket_filter_stage_dashboard
+#: model:ir.actions.client,name:website_support_ticket_odoo_aagam.dashboard_helpdesk_ticket_filter_stage_action
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.helpdesk_filter_dashboard_menu
+msgid "Filter Tickets"
+msgstr "Filtrar tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__ticket_id
+msgid "First"
+msgstr "Primer/a"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__assign_date
+msgid "First assignation date"
+msgstr "Primera fecha de asignación"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__folded_kanban
+msgid "Folded in Kanban"
+msgstr "Doblado en Kanban"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_form
+msgid ""
+"Follow this salesteam to automatically track the events associated to users "
+"of this team."
+msgstr ""
+"Siga a este equipo de ventas para realizar un seguimiento automático de los "
+"eventos asociados a los usuarios de este equipo."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_follower_ids
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_partner_ids
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Clientes)"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icono Font awesome, por ejemplo fa-tasks"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Future Activities"
+msgstr "Actividades futuras"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Good"
+msgstr "Bien"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__kanban_state__done
+msgid "Green"
+msgstr "Verde"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__legend_done
+msgid "Green Kanban Label"
+msgstr "Etiqueta Kanban Verde"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__kanban_state__normal
+msgid "Grey"
+msgstr "Gris"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__legend_normal
+msgid "Grey Kanban Label"
+msgstr "Etiqueta Kanban gris"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Group By"
+msgstr "Grupo Por"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.team_rating_progress_data
+msgid "Happy"
+msgstr "Feliz"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__has_message
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__has_message
+msgid "Has Message"
+msgstr "Tiene Mensaje"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__sla_reached_late
+msgid "Has SLA reached late"
+msgstr "Ha alcanzado tarde el SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.module.category,name:website_support_ticket_odoo_aagam.module_helpdesk_category
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.main_menu_helpdesk_ticket
+msgid "Helpdesk"
+msgstr "Helpdesk"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_category_action
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_category_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_category_tree
+msgid "Helpdesk Categories"
+msgstr "Categorías de la mesa de ayuda"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_category_search
+msgid "Helpdesk Category Search"
+msgstr "Búsqueda de categorías del servicio de asistencia técnica"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_aagam_helpdesk_channel
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_channel_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_channel_search
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_channel_tree
+msgid "Helpdesk Channel"
+msgstr "Canal de asistencia técnica"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: model:ir.actions.client,name:website_support_ticket_odoo_aagam.dashboard_helpdesk_ticket_action
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.helpdesk_ticket_dashboard_main_menu
+#, python-format
+msgid "Helpdesk Dashboard"
+msgstr "Tablero Helpdesk "
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.action_aagam_helpdesk_ticket_sla_policy
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_tree
+msgid "Helpdesk SLA"
+msgstr "Servicio de asistencia técnica SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_aagam_helpdesk_ticket_team
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__helpdesk_team_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_res_users__helpdesk_team_ids
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_tree
+msgid "Helpdesk Team"
+msgstr "Equipo de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Helpdesk Team :"
+msgstr "Equipo de asistencia :"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.index
+msgid "Helpdesk Team Satisfaction"
+msgstr "Satisfacción del equipo de asistencia técnica"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_search
+msgid "Helpdesk Team Search"
+msgstr "Búsqueda de equipos de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_form
+msgid "Helpdesk Team name..."
+msgstr "Nombre del equipo de asistencia..."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.action_aagam_helpdesk_ticket_team
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_type__team_ids
+msgid "Helpdesk Teams"
+msgstr "Equipos de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_dashboard.js:0
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_aagam_helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+#, python-format
+msgid "Helpdesk Ticket"
+msgstr "Ticket de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_helpdesk_ticket_invoice
+msgid "Helpdesk Ticket Invoice"
+msgstr "Factura de ticket del servicio de asistencia técnica"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_aagam_helpdesk_ticket_sla_policy
+msgid "Helpdesk Ticket SLA Policy"
+msgstr "Política de SLA del servicio de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_aagam_helpdesk_ticket_tag
+msgid "Helpdesk Ticket Tag"
+msgstr "Etiqueta de ticket del servicio de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_tag_search
+msgid "Helpdesk Ticket Tag Search"
+msgstr "Búsqueda de etiquetas de tickets del servicio de asistencia técnica"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_tag_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_tag_tree
+msgid "Helpdesk Ticket Tags"
+msgstr "Etiquetas de los tickets del servicio de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_aagam_helpdesk_ticket_type
+msgid "Helpdesk Ticket Type"
+msgstr "Tipo de Ticket del servicio de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_view_calendar_analysis
+msgid "Helpdesk_calendar"
+msgstr "Calendario del servicio de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.module.category,description:website_support_ticket_odoo_aagam.module_helpdesk_category
+msgid "Helps you handle your helpdesk security."
+msgstr "Le ayuda a gestionar la seguridad de su servicio de asistencia."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__priority__2
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__priority_new__4
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_sla_policy__priority__4
+msgid "High"
+msgstr "Alta"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+#, python-format
+msgid "High Priority"
+msgstr "Alta"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__priority_new__2
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_sla_policy__priority__2
+msgid "High priority"
+msgstr "Prioridad alta"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__hours
+msgid "Hours"
+msgstr "Horas"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel__id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category__id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_type__id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_parent_thread_id
+msgid ""
+"ID of the parent record holding the alias (example: project holding the task"
+" creation alias)"
+msgstr ""
+"ID del registro padre que contiene el alias (ejemplo: proyecto que contiene "
+"el alias de) creación de tarea)"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una actividad de excepción."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_needaction
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_unread
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_needaction
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcada, nuevos mensajes requieren su atención."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_has_error
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_has_sms_error
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_has_error
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcada, algunos mensajes tienen un error de entrega."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_bounced_content
+msgid ""
+"If set, this content will automatically be sent out to unauthorized users "
+"instead of the default message."
+msgstr ""
+"Si se configura, este contenido se enviará automáticamente a los usuarios no"
+" autorizados en lugar del mensaje por defecto."
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban
+msgid "In #{kanban_getcolorname(record.color.raw_value)}"
+msgstr "En #{kanban_getcolorname(record.color.raw_value)}"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/models/aagam_helpdesk_ticket.py:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "In Progress"
+msgstr "En proceso"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__account_total_data
+msgid "Invoice Amount"
+msgstr "Importe de la factura"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__invoice_number
+msgid "Invoice Number"
+msgstr "Número de factura"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__is_customer_replied
+msgid "Is Customer Replied"
+msgstr "El cliente ha contestado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_is_follower
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_is_follower
+msgid "Is Follower"
+msgstr "Es seguidor"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__is_invoice
+msgid "Is Invoice"
+msgstr "Es Factura"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__is_invoice_button
+msgid "Is Invoice Button"
+msgstr "Es el botón de factura"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__is_task
+msgid "Is Task"
+msgstr "Es Tarea"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__is_task_button
+msgid "Is Task Button"
+msgstr "Botón Tarea"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__is_ticket_closed
+msgid "Is Ticket Closed"
+msgstr "Ticket cerrado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__kanban_state
+msgid "Kanban State"
+msgstr "Estado del Kanban"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__name
+msgid "Lable"
+msgstr "Etiqueta"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.team_rating_data
+msgid "Last 3 months"
+msgstr "Últimos 3 meses"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.team_rating_data
+msgid "Last 30 days"
+msgstr "Últimos 30 días"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.team_rating_data
+msgid "Last 7 days"
+msgstr "Últimos 7 días"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel____last_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage____last_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket____last_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category____last_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy____last_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag____last_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team____last_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_type____last_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status____last_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice____last_update
+msgid "Last Modified on"
+msgstr "Última modificación"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "Last Month"
+msgstr "Último mes"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__date_last_stage_update
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__last_stage_update
+#, python-format
+msgid "Last Stage Update"
+msgstr "Última actualización de la etapa"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Last Update Date"
+msgstr "Fecha de la última actualización"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel__write_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__write_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__write_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category__write_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__write_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__write_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__write_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_type__write_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__write_uid
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel__write_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__write_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__write_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category__write_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__write_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__write_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__write_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_type__write_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__write_date
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "Last Week"
+msgstr "Última semana"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Last message is from customer"
+msgstr "El último mensaje es del cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Last message is from support"
+msgstr "El último mensaje es del servicio de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Late Activities"
+msgstr "Actividades tardías"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.team_rating_data
+msgid "Latest Feedbacks"
+msgstr "Últimos comentarios"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__email_cc
+msgid "List of cc from incoming emails."
+msgstr "Lista de cc de correos electrónicos entrantes."
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__priority__0
+#, python-format
+msgid "Low"
+msgstr "Bajo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+msgid "Low Priority"
+msgstr "Prioridad baja"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__priority_new__1
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_sla_policy__priority__1
+msgid "Low priority"
+msgstr "Prioridad baja"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_main_attachment_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Anexo principal"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_team__assigning_method__manual
+msgid "Manually"
+msgstr "Manualmente"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__priority__1
+#, python-format
+msgid "Medium"
+msgstr "Media"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Medium Priority"
+msgstr "Prioridad media"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_has_error
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de entrega del mensaje"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Message and communication history"
+msgstr "Histórico de mensajes y comunicaciones"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_ids
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__priority
+msgid "Minimum Priority"
+msgstr "Prioridad"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__time_minutes
+msgid "Minutes"
+msgstr "Actas"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "Monthly Tickets"
+msgstr "Tickets mensuales"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Fecha límite de mi actividad"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "My All tickets"
+msgstr "Todos mis tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "My Closed tickets"
+msgstr "Mis tickets cerrados"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "My Pending tickets"
+msgstr "Mis tickets pendientes"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.action_helpdesk_ticket_my
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.aagam_helpdesk_my_ticket_menu
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+#, python-format
+msgid "My Tickets"
+msgstr "Mis Tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "My urgent tickets"
+msgstr "Mis tickets urgentes"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_channel__name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_category__name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_tag__name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__name
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_type__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:mail.template,name:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_new_create
+msgid "New Ticket Created"
+msgstr "Nuevo ticket creado"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Newest"
+msgstr "Más reciente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Fecha límite de la próxima actividad"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la próxima actividad"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_type_id
+msgid "Next Activity Type"
+msgstr "Próximo tipo de actividad"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.actions.act_window,help:website_support_ticket_odoo_aagam.action_helpdesk_ticket_my
+msgid "No tickets found. Let's create one!"
+msgstr "No se han encontrado tickets. ¡Vamos a crear uno!"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "None"
+msgstr "Ninguno"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__not_start
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__not_start
+msgid "Not Started"
+msgstr "No iniciado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_needaction_counter
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__attachment_number
+msgid "Number of Attachments"
+msgstr "Número de archivos adjuntos"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_has_error_counter
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_needaction_counter
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_has_error_counter
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_unread_counter
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes sin leer"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__helpdesk_sla_status__status__ongoing
+msgid "Ongoing"
+msgstr "En curso"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_filter_stage_dashboard.js:0
+#, python-format
+msgid "Only Integer Value should be valid."
+msgstr "Sólo los valores enteros son válidos."
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+#, python-format
+msgid "Open"
+msgstr "Abrir"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_force_thread_id
+msgid ""
+"Optional ID of a thread (record) to which all incoming messages will be "
+"attached, even if they did not reply to it. If set, this will disable the "
+"creation of new records completely."
+msgstr ""
+"ID opcional de un hilo (registro) al que se enviarán todos los mensajes "
+"entrantes adjuntos, aunque no hayan respondido. Si se establece, se "
+"desactivará el creación de nuevos registros por completo."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.module.category,name:website_support_ticket_odoo_aagam.module_category_others
+msgid "Other Helpdesk Rights "
+msgstr "Otros derechos del servicio de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+msgid "Other Information"
+msgstr "Otra información"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "Overdue"
+msgstr "Atrasado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_user_id
+msgid "Owner"
+msgstr "Propietario"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_parent_model_id
+msgid "Parent Model"
+msgstr "Modelo padre"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_parent_thread_id
+msgid "Parent Record Thread ID"
+msgstr "ID del hilo de registro principal"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_parent_model_id
+msgid ""
+"Parent model holding the alias. The model holding the alias reference is not"
+" necessarily the model given by alias_model_id (example: project "
+"(parent_model) and task (model))"
+msgstr ""
+"Modelo padre que mantiene el alias. El modelo que mantiene la referencia al "
+"alias no es necesariamente el modelo dado por alias_model_id (ejemplo: "
+"project(parent_model) and task (model))"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__partner_name
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "Pending Tickets"
+msgstr "Tickets pendientes"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_contact
+msgid ""
+"Policy to post a message on the document using the mailgateway.\n"
+"- everyone: everyone can post\n"
+"- partners: only authenticated partners\n"
+"- followers: only followers of the related document or members of following channels\n"
+msgstr ""
+"Política para publicar un mensaje en el documento utilizando la entrada de correo.\n"
+"- todos: todos pueden publicar\n"
+"- Clientes: sólo clientes autentificados\n"
+"- seguidores: sólo seguidores del documento relacionado o miembros de los canales siguientes\n"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Poor"
+msgstr "Pobre"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__access_url
+msgid "Portal Access URL"
+msgstr "URL de acceso al portal"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Previous Month"
+msgstr "Mes anterior"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Previous Week"
+msgstr "Semana anterior"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Previous Year"
+msgstr "Año anterior"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__price_unit
+msgid "Price"
+msgstr "Precio"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__priority
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+#, python-format
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__project_project_id
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__quantity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_team__assigning_method__randomly
+msgid "Random"
+msgstr "Aleatorio"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__use_rating
+msgid "Ratings on tickets"
+msgstr "Valoraciones de los tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_form
+msgid "Reach In"
+msgstr "Alcance"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__helpdesk_sla_status__status__reached
+msgid "Reached"
+msgstr "Alcanzado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__reached_datetime
+msgid "Reached Date"
+msgstr "Fecha alcanzada"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_sla_policy__target_type__stage
+msgid "Reaching Stage"
+msgstr "Alcanzar la fase"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/models/aagam_helpdesk_ticket.py:0
+#, python-format
+msgid "Ready"
+msgstr "Preparado"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Ready to boost your customer service?"
+msgstr "¿Listo para impulsar su servicio de atención al cliente?"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_search
+msgid "Rechercher"
+msgstr "Buscar en"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_force_thread_id
+msgid "Record Thread ID"
+msgstr "ID del hilo de registro"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__kanban_state__blocked
+msgid "Red"
+msgstr "Rojo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__legend_blocked
+msgid "Red Kanban Label"
+msgstr "Etiqueta Kanban roja"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+msgid "Ref"
+msgstr "Ref"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Responsible:"
+msgstr "Responsable:"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban
+msgid "Restore"
+msgstr "Restaurar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "SLA Deadline:"
+msgstr "Plazo de SLA:"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "SLA Failed"
+msgstr "SLA Fallido"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_menu
+msgid "SLA Policy"
+msgstr "Política de SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__sla_status_ids
+msgid "SLA Status"
+msgstr "Política de SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__sla_deadline
+msgid "SLA deadline"
+msgstr "Fecha límite del SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__sla_expired
+msgid "SLA expired"
+msgstr "SLA expirado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__sla_ids
+msgid "SLAs"
+msgstr "SLAs"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_has_sms_error
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de entrega de SMS"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Salesperson"
+msgstr "Vendedor"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Search <span class=\"nolabel\"> (in Content)</span>"
+msgstr ""
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Search ID"
+msgstr "Buscar ID"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_search
+msgid "Search Status"
+msgstr "Estado de la búsqueda"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Search Ticket No."
+msgstr "Buscar Ticket Nº."
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Search in All"
+msgstr "Buscar en Todos"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Search in Customer"
+msgstr "Buscar en Cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Search in Messages"
+msgstr "Buscar en Mensajes"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Search in Reference"
+msgstr "Búsqueda en Referencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#, python-format
+msgid "Search in Stage"
+msgstr "Buscar en la etapa"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__access_token
+msgid "Security Token"
+msgstr "Ficha de seguridad"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Select Date"
+msgstr "Seleccionar fecha"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Select Date:"
+msgstr "Seleccione la fecha:"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Send an email to"
+msgstr "Envíe un correo electrónico a"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+msgid "Set to Close"
+msgstr "Ajustar para cerrar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.server,name:website_support_ticket_odoo_aagam.model_helpdesk_ticket_action_share
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban
+msgid "Share"
+msgstr "Compartir"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:res.groups,name:website_support_ticket_odoo_aagam.group_use_sla
+msgid "Show SLA Policies"
+msgstr "Mostrar políticas SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Show all records which has next action date is before today"
+msgstr ""
+"Mostrar todos los registros cuya fecha de próxima acción sea anterior a hoy"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__sla_id
+msgid "Sla"
+msgstr "Sla"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Solved"
+msgstr "Resuelto"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__helpdesk_stage_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__helpdesk_stage_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__sla_stage_id
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+#, python-format
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Stage: Cancelled"
+msgstr "Etapa: Cancelado"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Stage: In Progress"
+msgstr "Etapa: En progreso"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Stage: New"
+msgstr "Etapa: Nuevo"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Stage: Others"
+msgstr "Etapa: Otros"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Stage: Solved"
+msgstr "Etapa: Resuelto"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.aagam_helpdesk_stage_action
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__stage_ids
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.helpdesk_ticket_stage_menu
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk__stage_form
+msgid "Stages"
+msgstr "Etapas"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__stage_ids
+msgid ""
+"Stages the team will use. This team's tickets will only be able to be in "
+"these stages."
+msgstr ""
+"Etapas que utilizará el equipo. Los tickets de este equipo sólo podrán estar"
+" en estas etapas."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__status
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+msgid "Status"
+msgstr "Estado"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades\n"
+"Atrasado: La fecha de vencimiento ya ha pasado\n"
+"Hoy: La fecha de la actividad es hoy\n"
+"Planificadas: Actividades futuras."
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+#, python-format
+msgid "Subject"
+msgstr "Asunto"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Submit Your Rating"
+msgstr "Envíe su calificación"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Submit Your Review"
+msgstr "Envíe su opinión"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "Success Rate"
+msgstr "Tasa de éxito"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__sla_success
+msgid "Success SLA Policy"
+msgstr "Política de éxito del SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+msgid "Summary"
+msgstr "Resumen"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:res.groups,name:website_support_ticket_odoo_aagam.group_helpdesk_ticket_admin
+msgid "Support Admin"
+msgstr "Soporte administrativo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:res.groups,name:website_support_ticket_odoo_aagam.group_helpdesk_ticket_manager
+msgid "Support Manager"
+msgstr "Jefe de soporte"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:mail.template,name:website_support_ticket_odoo_aagam.ticket_template
+msgid "Support Ticket Email"
+msgstr "Correo electrónico de la solicitud de asistencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:res.groups,name:website_support_ticket_odoo_aagam.group_helpdesk_ticket_users
+msgid "Support User"
+msgstr "Soporte al usuario"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__tag_ids
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__tag_ids
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_form
+msgid "Target"
+msgstr "Objetivo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_res_users__helpdesk_ticket_target_rating
+msgid "Target Customer Rating"
+msgstr "Objetivo de la calificación del cliente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_res_users__helpdesk_ticket_target_success
+msgid "Target Success Rate"
+msgstr "Objetivo de tasa de éxito"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_res_users__helpdesk_ticket_target_closed
+msgid "Target Tickets to Close"
+msgstr "Objetivo Tickets a cerrar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__target_type
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__target_type
+msgid "Target Type"
+msgstr "Tipo de objetivo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Task"
+msgstr "Tarea"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_ticket_invoice__tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_stage__team_ids
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__team_id
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+#, python-format
+msgid "Team"
+msgstr "Equipo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__team_leader_id
+msgid "Team Leader"
+msgstr "Jefe de equipo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__member_ids
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_form
+msgid "Team Members"
+msgstr "Miembros del equipo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__team_sla
+msgid "Team SLA"
+msgstr "Equipo de SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__visibility_member_ids
+msgid "Team Visibility"
+msgstr "Visibilidad del equipo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.helpdesk_ticket_helpdesk_team
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.helpdesk_ticket_team_menu
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.index
+msgid "Teams"
+msgstr "Equipos"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.rating_submit
+msgid "Thank You For Submit Your Review"
+msgstr "Gracias por enviar su opinión"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_success
+msgid ""
+"Thank you for submitting your issue, our team will get right on\n"
+"                                it!"
+msgstr ""
+"Gracias por enviarnos tu incidencia, nuestro equipo se pondrá manos a la "
+"obra.\n"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_model_id
+msgid ""
+"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+" email that does not reply to an existing record will cause the creation of "
+"a new record of this model (e.g. a Project Task)"
+msgstr ""
+"El modelo (Tipo de Documento Odoo) al que corresponde este alias. Cualquier "
+"correo electrónico entrante que no responda a un registro existente causará "
+"la creación de un nuevo registro de este modelo (por ejemplo, una tarea de "
+"proyecto)."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_name
+msgid ""
+"The name of the email alias, e.g. 'jobs' if you want to catch emails for "
+"<jobs@example.odoo.com>"
+msgstr ""
+"Use un nombre de alias de correo electrónico, por ejemplo, 'jobs' si desea "
+"capturar correos electrónicos para <jobs@example.odoo.com>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__alias_user_id
+msgid ""
+"The owner of records created upon receiving emails on this alias. If this "
+"field is not set the system will attempt to find the right owner based on "
+"the sender (From) address, or will use the Administrator account if no "
+"system user is found for that address."
+msgstr ""
+"El propietario de los registros creados al recibir correos electrónicos en "
+"este alias. Si este Si este campo no está configurado, el sistema intentará "
+"encontrar al propietario correcto basándose en la dirección del remitente "
+"(De), o utilizará la cuenta del Administrador si no hay ninguna si no se "
+"encuentra ningún usuario del sistema para esa dirección."
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+msgid "There are currently no Ticket for your account."
+msgstr "Actualmente no hay Ticket para tu cuenta."
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "This Month"
+msgstr "Este mes"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "This Week"
+msgstr "Esta semana"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "This Year"
+msgstr "Este año"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "This dashboard will activate once you have created your first ticket."
+msgstr "Este tablero se activará una vez que haya creado su primer ticket."
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Ticker no"
+msgstr "Ticket nº"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_account_analytic_line__ticket_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__ticket_id
+msgid "Ticket"
+msgstr "Ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__assigning_method
+msgid "Ticket Assigment Method"
+msgstr "Método de asignación de tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "Ticket Due Time"
+msgstr "Vencimiento del ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Ticket ID"
+msgstr "ID de Ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__ticket_invoice_ids
+msgid "Ticket Invoice"
+msgstr "Factura de tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+msgid "Ticket No."
+msgstr "Ticket No°."
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_search
+msgid "Ticket Number"
+msgstr "Número de ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.report,name:website_support_ticket_odoo_aagam.report_ticket_card
+msgid "Ticket Report"
+msgstr "Reporte de Tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_helpdesk_sla_status
+msgid "Ticket SLA Status"
+msgstr "Estado del SLA del ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_stage_search
+msgid "Ticket Stage Search"
+msgstr "Búsqueda de Ticket por etapa"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_stage_tree
+msgid "Ticket Stages"
+msgstr "Etapas de los tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_search
+msgid "Ticket Status"
+msgstr "Estado del ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_tag_action
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_tag_menu
+msgid "Ticket Tags"
+msgstr "Etiquetas de los tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__helpdesk_ticket_type_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_sla_policy__ticket_type_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__helpdesk_type_ids
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Ticket Type"
+msgstr "Tipo de ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.action_aagam_helpdesk_ticket_type
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_type_tree
+msgid "Ticket Types"
+msgstr "Tipo de ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__allow_portal_ticket_closing
+msgid "Ticket closing"
+msgstr "Cierre de tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__number
+msgid "Ticket number"
+msgstr "Número de ticket"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: model:ir.actions.act_window,name:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_action
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__helpdesk_ticket_ids
+#: model:ir.ui.menu,name:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_menu
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.portal_my_home_helpdesk_ticket
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.portal_my_home_menu_helpdesk
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+#, python-format
+msgid "Tickets"
+msgstr "Tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Tickets Search"
+msgstr "Búsqueda de tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__closed_hours
+msgid "Time to close (hours)"
+msgstr "Tiempo hasta el cierre (horas)"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__assign_hours
+msgid "Time to first assignation (hours)"
+msgstr "Plazo hasta la primera asignación (horas)"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__timesheet_ids
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.report_ticket
+msgid "Timesheet"
+msgstr "Hoja de horas"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+msgid "Title"
+msgstr "Título"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.actions.act_window,help:website_support_ticket_odoo_aagam.helpdesk_ticket_action_main
+msgid ""
+"To get things done, use activities and status on tickets.\n"
+"                <br>\n"
+"                Chat in real time or by email to collaborate efficiently."
+msgstr ""
+"Para hacer las tareas, utilice las actividades y el estado de los tickets.\n"
+"                <br>\n"
+"                Chatea en tiempo real o por correo electrónico para colaborar eficazmente."
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.actions.act_window,help:website_support_ticket_odoo_aagam.action_helpdesk_ticket_my
+msgid ""
+"To get things done, use activities and status on tickets. <br>\n"
+"                Chat in real time or by email to collaborate efficiently."
+msgstr ""
+"Para hacer las tareas, utilice las actividades y el estado de los tickets. <br>\n"
+"                Chatea en tiempo real o por correo electrónico para colaborar de forma eficiente."
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Today"
+msgstr "Hoy"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Today Activities"
+msgstr "Actividades de hoy"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "Total"
+msgstr "Total"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de la Excepción registrada."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__portal_rating_url
+msgid "URL to Submit an Issue"
+msgstr "URL para enviar una incidencia"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/controller/portal_ticket.py:0
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+#, python-format
+msgid "Unassigned"
+msgstr "Sin asignar"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_unread
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_unread
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Unread Messages"
+msgstr "Mensajes no leídos"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__message_unread_counter
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes no leídos"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Upcoming SLA Fail"
+msgstr "Próximo fallo del SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__upcoming_sla_fail_tickets
+msgid "Upcoming SLA Fail Tickets"
+msgstr "Próximas entradas para la Falla SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__priority_new__3
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket_sla_policy__priority__3
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_portal
+#, python-format
+msgid "Urgent"
+msgstr "Urgente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_tickets_view_search
+msgid "Urgent Priority"
+msgstr "Prioridad urgente"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__use_sla
+msgid "Use SLA"
+msgstr "Utilizar SLA"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_team_search
+msgid "User"
+msgstr "Usuario"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_res_users
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__user_ids
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields.selection,name:website_support_ticket_odoo_aagam.selection__aagam_helpdesk_ticket__priority__3
+msgid "Very High"
+msgstr "Muy alta"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:mail.template,subject:website_support_ticket_odoo_aagam.ticket_template
+msgid "We have received your support ticket and will get back to you shortly"
+msgstr ""
+"Hemos recibido su solicitud de asistencia y nos pondremos en contacto con "
+"usted en breve."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__website_message_ids
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__website_message_ids
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__website_message_ids
+msgid "Website communication history"
+msgstr "Historia de la comunicación en la web"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#, python-format
+msgid "Weekly Tickets"
+msgstr "Entradas semanales"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Welcome"
+msgstr "Bienvenido"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__calendar_id
+#: model:ir.model.fields,field_description:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket_team__resource_calendar_id
+msgid "Working Hours"
+msgstr "Horas de trabajo"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_helpdesk_sla_status__exceeded_days
+msgid ""
+"Working days exceeded for reached SLAs compared with deadline. Positive "
+"number means the SLA was eached after the deadline."
+msgstr ""
+"Días laborables superados para los SLA alcanzados en comparación con el "
+"plazo. Positivo Un número positivo significa que el SLA se alcanzó después "
+"de la fecha límite."
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.tickets_followup
+msgid "Write Your Review"
+msgstr "Escribe tu opinión"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/js/helpdesk_ticket_filter_stage_dashboard.js:0
+#, python-format
+msgid "Wrong value entered!"
+msgstr "¡Valor incorrecto introducido!"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_dashboard.xml:0
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "Yesterday"
+msgstr "Ayer"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.fields,help:website_support_ticket_odoo_aagam.field_aagam_helpdesk_ticket__attachment_ids
+msgid "You can attach the copy of your document"
+msgstr "Puede adjuntar la copia de su documento"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model.constraint,message:website_support_ticket_odoo_aagam.constraint_res_users_target_ticket_closed_not_zero
+#: model:ir.model.constraint,message:website_support_ticket_odoo_aagam.constraint_res_users_target_ticket_rating_not_zero
+#: model:ir.model.constraint,message:website_support_ticket_odoo_aagam.constraint_res_users_target_ticket_success_not_zero
+msgid "You cannot have negative targets"
+msgstr "No puede tener objetivos negativos"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_error_message
+msgid "You have entered wrong ticket number"
+msgstr "Ha introducido un número de ticket incorrecto"
+
+#. module: website_support_ticket_odoo_aagam
+#: code:addons/website_support_ticket_odoo_aagam/models/aagam_helpdesk_ticket_team.py:0
+#, python-format
+msgid "You must have team members assigned to change the assignment method."
+msgstr ""
+"Debe tener miembros del equipo asignados para cambiar el método de "
+"asignación."
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.view_helpdesk_ticket_success
+msgid "Your Ticket Number is"
+msgstr "Su número de ticket es"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.actions.act_window,help:website_support_ticket_odoo_aagam.helpdesk_ticket_filter_stage_dashboard
+#: model_terms:ir.actions.act_window,help:website_support_ticket_odoo_aagam.helpdesk_ticket_helpdesk_team
+msgid "Your teams will appear here"
+msgstr "Tus equipos aparecerán aquí"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_aagam_helpdesk_stage
+msgid "aagam.helpdesk.stage"
+msgstr "aagam.helpdesk.stage"
+
+#. module: website_support_ticket_odoo_aagam
+#: model:ir.model,name:website_support_ticket_odoo_aagam.model_aagam_helpdesk_ticket_category
+msgid "aagam.helpdesk.ticket.category"
+msgstr "aagam.helpdesk.ticket.category"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_form
+msgid "days<br/>"
+msgstr "días<br/>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_ticket_search
+msgid "eg TICK-00001"
+msgstr "ej. TICK-00001"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_form
+msgid "hours<br/>"
+msgstr "horas<br/>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_sla_policy_form
+msgid "minutes<br/>"
+msgstr "minutos<br/>"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.helpdesk_create_ticket_from_front_end
+msgid "text"
+msgstr "texto"
+
+#. module: website_support_ticket_odoo_aagam
+#: model_terms:ir.ui.view,arch_db:website_support_ticket_odoo_aagam.index
+msgid "tickets"
+msgstr "tickets"
+
+#. module: website_support_ticket_odoo_aagam
+#. openerp-web
+#: code:addons/website_support_ticket_odoo_aagam/static/src/xml/helpdesk_ticket_filter_stage.xml:0
+#, python-format
+msgid "to create a ticket."
+msgstr "para crear un ticket."
+
+#. module: website_support_ticket_odoo_aagam
+#: model:mail.template,subject:website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_new_create
+msgid "{{object.display_name}}"
+msgstr "{{object.display_name}}"

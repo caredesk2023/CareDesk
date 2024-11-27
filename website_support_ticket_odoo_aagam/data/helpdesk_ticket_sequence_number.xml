@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <data>
+        <record id="helpdesk_sequence_number" model="ir.sequence">
+            <field name="name">Helpdesk Sequence</field>
+            <field name="code">helpdesk.ticket.sequence</field>
+            <field name="prefix">TICK-</field>
+            <field name="padding">5</field>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+        <record id="aagam_helpdesk_ticket_customer_team" model="aagam.helpdesk.ticket.team">
+            <field name="name">Customer Care</field>
+            <field name="alias_name">support</field>
+            <field name="alias_model_id">155</field>
+            <field name="use_sla" eval="True"/>
+        </record>
+
+    <record id="aagam_helpdesk_stage_inprogress" model="aagam.helpdesk.stage">
+        <field name="name">In Progress</field>
+        <field name="sequence">1</field>
+        <field name="team_ids" eval="[(4, ref('aagam_helpdesk_ticket_customer_team'))]"/>
+        <field name="is_close" eval="False"/>
+    </record>
+
+    <record id="aagam_helpdesk_stage_solved" model="aagam.helpdesk.stage">
+        <field name="name">Solved</field>
+        <field name="team_ids" eval="[(4, ref('aagam_helpdesk_ticket_customer_team'))]"/>
+        <field name="sequence">2</field>
+        <field name="is_close" eval="True"/>
+        <field name="folded_kanban" eval="True"/>
+    </record>
+
+     <record id="aagam_helpdesk_stage_onhold" model="aagam.helpdesk.stage">
+        <field name="name">On Hold</field>
+        <field name="team_ids" eval="[(4, ref('aagam_helpdesk_ticket_customer_team'))]"/>
+        <field name="sequence">3</field>
+        <field name="is_close" eval="True"/>
+        <field name="folded_kanban" eval="True"/>
+    </record>
+
+    <record id="aagam_helpdesk_stage_cancelled" model="aagam.helpdesk.stage">
+        <field name="name">Cancelled</field>
+        <field name="sequence">4</field>
+        <field name="team_ids" eval="[(4, ref('aagam_helpdesk_ticket_customer_team'))]"/>
+        <field name="is_close" eval="True"/>
+        <field name="folded_kanban" eval="True"/>
+    </record>
+     <record id="helpdesk_ticket_stage_done" model="aagam.helpdesk.stage">
+        <field name="name">Done </field>
+        <field name="sequence">5</field>
+        <field name="is_close" eval="True"/>
+        <field name="folded_kanban" eval="True"/>
+    </record>
+    </data>
+</odoo>
