@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="aagam_helpdesk_ticket_type_tree">
+        <field name="name">aagam.helpdesk.ticket.type.tree</field>
+        <field name="model">aagam.helpdesk.ticket.type</field>
+        <field name="arch" type="xml">
+            <tree string="Ticket Types">
+                <field name="name" />
+            </tree>
+        </field>
+        </record>
+
+        <record model="ir.ui.view" id="aagam_helpdesk_ticket_type_form">
+        <field name="name">aagam.helpdesk.ticket.type.form</field>
+        <field name="model">aagam.helpdesk.ticket.type</field>
+        <field name="arch" type="xml">
+            <form string="Ticket Type">
+                <group>
+                    <field name="name" />
+                    <field name="team_ids" />
+                </group>
+            </form>
+        </field>
+        </record>
+
+    <record id="action_aagam_helpdesk_ticket_type" model="ir.actions.act_window">
+        <field name="name">Ticket Types</field>
+        <field name="res_model">aagam.helpdesk.ticket.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Ticket Types" id="aagam_helpdesk_ticket_type" parent="helpdesk_ticket_configuration" action="action_aagam_helpdesk_ticket_type" sequence="5"/>
+
+    </data>
+</odoo>

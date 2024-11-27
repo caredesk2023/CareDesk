@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="aagam_helpdesk_ticket_summary_tree" model="ir.actions.act_window">
+        <field name="name">Tree</field>
+        <field name="res_model">aagam.helpdesk.ticket</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_tree"/>
+    </record>
+
+    <record id="aagam_helpdesk_ticket_view_graph" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.graph.analysis</field>
+        <field name="model">aagam.helpdesk.ticket</field>
+        <field name="arch" type="xml">
+            <graph string="Helpdesk Ticket Analysis" stacked="True" sample="1">
+                <field name="helpdesk_team_id" type="row"/>
+                <field name="helpdesk_stage_id" type="col"/>
+            </graph>
+        </field>
+    </record>
+
+
+    <record id="aagam_helpdesk_ticket_bar_chart" model="ir.actions.act_window">
+        <field name="name">Bar Chart</field>
+        <field name="res_model">aagam.helpdesk.ticket</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_view_graph"/>
+    </record>
+
+    <record id="aagam_helpdesk_ticket_pivot_graph" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.pivot</field>
+        <field name="model">aagam.helpdesk.ticket</field>
+        <field name="arch" type="xml">
+            <pivot string="Helpdesk Tickets" sample="1">
+                <field name="create_date" type="row" interval="day"/>
+                <field name="helpdesk_stage_id" type="col"/>
+                <field name="color" invisible="1"/>
+            </pivot>
+        </field>
+    </record>
+
+      <record id="aagam_helpdesk_ticket_line_graph" model="ir.actions.act_window">
+        <field name="name">Pie Graph</field>
+        <field name="res_model">aagam.helpdesk.ticket</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_pivot_graph"/>
+    </record>
+    <record id="aagam_helpdesk_ticket_graph_analysis" model="ir.ui.view">
+            <field name="name">helpdesk.ticket.graph</field>
+            <field name="model">aagam.helpdesk.ticket</field>
+            <field name="arch" type="xml">
+                <graph string="Performance Analysis" stacked="True" sample="1">
+                    <field name="helpdesk_stage_id" type="col"/>
+                    <field name="helpdesk_team_id" type="row"/>
+                    <field name="closed_hours" type="measure"/>
+                </graph>
+            </field>
+        </record>
+
+      <record id="aagam_helpdesk_ticket_team_graph" model="ir.actions.act_window">
+        <field name="name">Team Graph</field>
+        <field name="res_model">aagam.helpdesk.ticket</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_graph_analysis"/>
+    </record>
+
+    <record id="aagam_helpdesk_ticket_form_view" model="ir.ui.view">
+        <field name="name">Summary Form</field>
+        <field name="model">board.board</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Summary">
+                <board>
+                    <column>
+                        <action
+                            string="Helpdesk Team"
+                            name="%(aagam_helpdesk_ticket_bar_chart)d"/>
+
+                         <action
+                            string="Team Graph"
+                            name="%(aagam_helpdesk_ticket_team_graph)d"/>
+                         <action
+                            string="Tickets List"
+                            name="%(aagam_helpdesk_ticket_summary_tree)d"/>
+                        <action string="Overall Tickets Status"
+                            name="%(aagam_helpdesk_ticket_line_graph)d"/>
+                  </column>
+                </board>
+            </form>
+        </field>
+    </record>
+
+    <record id="aagam_helpdesk_ticket_summary" model="ir.actions.act_window">
+        <field name="name">Summary</field>
+        <field name="res_model">board.board</field>
+        <field name="view_mode">form</field>
+        <field name="usage">menu</field>
+        <field name="view_id" ref="aagam_helpdesk_ticket_form_view"/>
+    </record>
+
+     <menuitem id="aagam_helpdesk_sumary_view" name="Summary" action="aagam_helpdesk_ticket_summary"
+              sequence="10" parent="website_support_ticket_odoo_aagam.main_menu_helpdesk_ticket"
+              groups="website_support_ticket_odoo_aagam.group_helpdesk_ticket_manager,website_support_ticket_odoo_aagam.group_helpdesk_ticket_admin"/>
+
+</odoo>

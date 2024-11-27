@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="aagam_helpdesk_ticket_tree" model="ir.ui.view">
+        <field name="name">aagam.helpdesk.ticket.tree</field>
+        <field name="model">aagam.helpdesk.ticket</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="number" />
+                <field name="name" />
+                <field name="partner_name" />
+                <field name="res_user_id" />
+                <field name="helpdesk_stage_id" />
+                <field name="priority" widget="priority" />
+                <field name="helpdesk_ticket_type_id" optional="hide"/>
+                <field name="create_date" readonly="1" />
+                <field name="last_stage_update" />
+            </tree>
+        </field>
+    </record>
+
+        <record id="aagam_helpdesk_ticket_form" model="ir.ui.view">
+        <field name="name">aagam.helpdesk.ticket.form</field>
+        <field name="model">aagam.helpdesk.ticket</field>
+        <field name="arch" type="xml">
+            <form string="Helpdesk Ticket">
+                <header>
+                    <button
+                        string="Assign to me"
+                        name="assign_to_me"
+                        type="object"
+                        attrs="{'invisible' : [('res_user_id', '!=', False)]}"
+                    />
+
+                    <button name="close_action" string="Set to Close" type="object" class="oe_highlight" attrs="{'invisible': [('is_ticket_closed', '=', True)]}"/>
+                    <field
+                        name="helpdesk_stage_id"
+                        widget="statusbar"
+                        options="{'clickable': '1', 'fold_field': 'folded_kanban'}"
+                    />
+                </header>
+                <sheet>
+		<div class="oe_button_box" name="button_box">
+                        <button name="action_get_attachment_tree_view" class="oe_stat_button" icon="fa-book"
+                            type="object" attrs="{'invisible':  [('attachment_number', '=', 0)]}">
+                            <field name="attachment_number" widget="statinfo" string="Documents"/>
+                        </button>
+                          <button string="Create Task" type="object" name="create_task" icon="fa-pencil-square-o" class="oe_start_button" attrs="{'invisible': [('is_task', '=', True)]}" groups='website_support_ticket_odoo_aagam.group_helpdesk_ticket_admin'>
+                            <field name="is_task" invisible="1" />
+                        </button>
+
+
+                         <button name="task_action" type="object" string="Task" class="oe_start_button task_button" icon="fa-pencil-square" attrs="{'invisible': [('is_task', '!=', True)]}" groups='website_support_ticket_odoo_aagam.group_helpdesk_ticket_admin'>
+                            <field name="is_task_button" invisible="1"/>
+                        </button>
+                        <button string="Create Invoice" type="object" name="create_invoice" icon="fa-pencil-square-o" class="oe_start_button" attrs="{'invisible' : ['|', ('ticket_invoice_ids', '=', []), ('is_invoice', '=', True)]}">
+                            <field name="is_invoice" invisible="1"/>
+                        </button>
+                        <button name="invoice_action" type="object" string="Invoice" class="oe_start_button task_button" icon="fa-pencil-square" attrs="{'invisible': [('is_invoice', '!=', True)]}" groups='website_support_ticket_odoo_aagam.group_helpdesk_ticket_admin'>
+                           <field name="is_invoice_button" invisible="1"/>
+
+                        </button>
+
+
+                         <button name ="toggle_active" type="object" class="oe_highlight" string="Archive" icon="fa-archive">
+                    <field name="active" widget="boolean_button" invisible="1"/>
+                         </button>
+		</div>
+
+                    <widget
+                        name="web_ribbon"
+                        title="Archived"
+                        bg_color="bg-danger"
+                        attrs="{'invisible': [('active', '=', True)]}"
+                    />
+                    <div class="oe_button_box" name="button_box">
+                    </div>
+                    <div class="oe_title">
+                        <h1 class="oe_title">
+                            <field name="number" />
+                        </h1>
+                        <h2 class="o_row">
+                            <field name="name" />
+                        </h2>
+                    </div>
+                    <group name="main">
+                        <group>
+                            <field name="active" invisible="1" />
+                            <field name="helpdesk_team_id" options='{"always_reload": True}' />
+                            <field name="user_ids" invisible="1" readonly="1" />
+                            <field
+                                name="res_user_id"
+                                domain="[('share', '=', False)]"
+                                options='{"always_reload": True}'
+                            />
+                            <field name="priority" widget="priority" />
+                            <field name="helpdesk_ticket_type_id" widget="selection"/>
+                            <field
+                                name="company_id"
+                                options="{'no_create': True}"
+                                groups="base.group_multi_company"
+                            />
+                            <field name="create_date" readonly="1" />
+                            <field name="channel_id" />
+                            <field name="team_sla" invisible="1" />
+                            <field name="sla_deadline" attrs="{'invisible': [('team_sla', '=', False)]}"/>
+                        </group>
+                        <group>
+                            <field name="tag_ids" widget="many2many_tags"/>
+                            <field name="project_project_id"/>
+                            <field name="partner_id" />
+                            <field name="partner_name" />
+                            <field name="partner_email" />
+                             <field name="is_ticket_closed" attrs="{'invisible': [('is_ticket_closed', '=', False)]}"/>
+                             <field name="close_ticket_date" attrs="{'invisible': [('is_ticket_closed', '=', False)]}"/>
+<!--                            <field name="category_id" />-->
+<!--                            <field-->
+<!--                                name="tag_ids"-->
+<!--                                widget="many2many_tags"-->
+<!--                                options="{'no_create_edit': True}"-->
+<!--                            />-->
+                        </group>
+                    </group>
+                    <group>
+                        <notebook>
+                            <page string="Description" name="description">
+                                <field name="description" widget="html" />
+                            </page>
+                            <page string="Other Information" name="other_info">
+                                <group>
+                                    <field name="last_stage_update" readonly="1" />
+                                    <field name="assigned_date" readonly="1" />
+                                    <field name="closed_date" readonly="1" />
+                                </group>
+                            </page>
+                             <page string="Timesheet" groups='website_support_ticket_odoo_aagam.group_helpdesk_ticket_admin'>
+                            <field name="timesheet_ids"/>
+                        </page>
+                        <page string="Account Invoice"  groups='website_support_ticket_odoo_aagam.group_helpdesk_ticket_admin'>
+                            <field name="ticket_invoice_ids"/>
+                        </page>
+                             <page string="Customer Rating"  groups='website_support_ticket_odoo_aagam.group_helpdesk_ticket_admin' >
+                            <group>
+                            <field name="priority_new"  widget="priority"/>
+                            <field name="comment"/>
+                        </group>
+                        </page>
+                        </notebook>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field
+                        name="message_ids"
+                        widget="mail_thread"
+                        options="{'post_refresh': 'recipients', 'open_attachments': True}"
+                    />
+                </div>
+            </form>
+        </field>
+        </record>
+            <record id="helpdesk_tickets_view_search" model="ir.ui.view">
+        <field name="name">aagam.helpdesk.ticket.search</field>
+        <field name="model">aagam.helpdesk.ticket</field>
+        <field name="arch" type="xml">
+            <search string="Tickets Search">
+                <field name="name"/>
+                <field name="id" string="Ticket ID"/>
+                <field name="tag_ids"/>
+                <field name="helpdesk_team_id"/>
+                <field name="res_user_id"/>
+                <field name="partner_id"/>
+                <field name="priority" invisible="1"/>
+                <field name="sla_deadline" groups="website_support_ticket_odoo_aagam.group_use_sla"/>
+
+                <filter string="My Tickets" domain="[('res_user_id','=',uid)]" name="my_ticket"/>
+                <filter string="Unassigned" domain="[('res_user_id','=',False)]" name="unassigned"/>
+                <separator/>
+                <filter string="Open" domain="[('helpdesk_stage_id.is_close','=',False)]" name="is_open"/>
+                <filter string="Urgent Priority" domain="[('priority','=',3)]" name="urgent_priority"/>
+                 <filter string="High Priority" domain="[('priority','=',2)]" name="high_priority"/>
+                  <filter string="Medium Priority" domain="[('priority','=',1)]" name="medium_priority"/>
+                   <filter string="Low Priority" domain="[('priority','=',0)]" name="low_priority"/>
+
+
+                <separator/>
+                 <filter string="Closed Tickets" domain="[('is_ticket_closed','=',True)]" name="is_closed"/>
+                <filter string="Unread Messages" domain="[('message_needaction','=',True)]" name="message_needaction"/>
+                <separator/>
+                <filter string="Creation Date" date="create_date" name="creation_date"/>
+                <filter string="Customer Replied" domain="[('is_customer_replied','=',True)]" name="is_customer_replied"/>
+                <separator/>
+                <filter invisible="1" string="Late Activities" name="activities_overdue"
+                    domain="[('activity_ids.date_deadline', '&lt;', context_today().strftime('%Y-%m-%d'))]"
+                    help="Show all records which has next action date is before today"/>
+                <filter invisible="1" string="Today Activities" name="activities_today"
+                    domain="[('activity_ids.date_deadline', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                <filter invisible="1" string="Future Activities" name="activities_upcoming_all"
+                        domain="[('activity_ids.date_deadline', '&gt;', context_today().strftime('%Y-%m-%d'))
+                        ]"/>
+                <separator/>
+                <filter string="Upcoming SLA Fail" domain="[('sla_deadline','!=',False),('sla_deadline', '&lt;=', (datetime.date.today() + relativedelta(days=1)).strftime('%Y-%m-%d'))]" name="upcoming_sla_fail" groups="website_support_ticket_odoo_aagam.group_use_sla"/>
+                <filter string="SLA Failed" domain="[('sla_fail','=', True)]" name="sla_failed" groups="website_support_ticket_odoo_aagam.group_use_sla"/>
+                <separator/>
+                <filter string="Archived" domain="[('active','=',False)]" name="archive"/>
+                <group expand="0" string="Group By">
+                    <filter string="Assigned to" name="assignee" context="{'group_by':'res_user_id'}"/>
+                    <filter string="Team" name="team" context="{'group_by':'helpdesk_team_id'}"/>
+                    <filter string="Ticket Type" name="helpdesk_ticket_type_id" context="{'group_by':'helpdesk_ticket_type_id'}"/>
+                    <filter string="Stage" name="stage" context="{'group_by':'helpdesk_stage_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+        <record id="helpdesk_ticket_view_calendar_analysis" model="ir.ui.view">
+        <field name="name">aagam.helpdesk.ticket.calendar.analysis</field>
+        <field name="model">aagam.helpdesk.ticket</field>
+        <field name="priority" eval="2"/>
+        <field name="arch" type="xml">
+            <calendar string="Helpdesk_calendar" date_start="create_date"
+                event_open_popup="true"
+                color="partner_id">
+                <field name="name"/>
+                <field name="number"/>
+                <field name="partner_id"/>
+            </calendar>
+        </field>
+    </record>
+        <record id="helpdesk_ticket_view_kanban" model="ir.ui.view">
+        <field name="name">aagam.helpdesk.ticket.kanban</field>
+        <field name="model">aagam.helpdesk.ticket</field>
+        <field name="priority">10</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="helpdesk_stage_id" class="o_kanban_small_column o_kanban_helpdesk_ticket" quick_create_view="website_support_ticket_odoo_aagam.quick_create_ticket_form" sample="1">
+                <field name="helpdesk_stage_id" options='{"group_by_tooltip": {"description": "Stage Description"}}'/>
+                <field name="res_user_id"/>
+                <field name="color"/>
+                <field name="priority"/>
+                <field name="sla_fail"/>
+                <field name="tag_ids"/>
+                <field name="active"/>
+                <field name="activity_ids"/>
+                <field name="activity_state"/>
+                <field name="helpdesk_team_id"/>
+                <field name="legend_blocked"/>
+                <field name="legend_normal"/>
+                <field name="legend_done"/>
+                <progressbar field="activity_state" colors='{"planned": "success", "today": "warning", "overdue": "danger"}'/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="#{!selection_mode ? kanban_color(record.color.raw_value) : ''} oe_kanban_global_click">
+                            <span class="oe_kanban_color_help" t-attf-title="In #{kanban_getcolorname(record.color.raw_value)}" role="img" t-attf-aria-label="In #{kanban_getcolorname(record.color.raw_value)}"/>
+                            <div class="o_dropdown_kanban dropdown">
+                                <a class="dropdown-toggle o-no-caret btn" role="button" data-toggle="dropdown" href="#" aria-label="Dropdown menu" title="Dropdown menu">
+                                    <span class="fa fa-ellipsis-v"/>
+                                </a>
+                                <div class="dropdown-menu" role="menu">
+                                    <a name="%(portal.portal_share_action)d" type="action" class="dropdown-item" role="menuitem">Share</a>
+                                    <t t-if="widget.editable"><a type="edit" class="dropdown-item" role="menuitem">Edit</a></t>
+                                    <t t-if="widget.deletable"><a type="delete" class="dropdown-item" role="menuitem">Delete</a></t>
+                                    <a name="toggle_active" type="object" class="dropdown-item" role="menuitem" t-if="! record.active.value">Restore</a>
+                                    <a name="toggle_active" type="object" class="dropdown-item" role="menuitem" t-if="record.active.value">Archive</a>
+                                    <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                </div>
+                            </div>
+                            <div class="oe_kanban_content">
+                                <div>
+                                    <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                                </div>
+                                <div>
+                                    <strong><field name="name"/> (#<field name="id"/>)</strong>
+                                </div>
+                                <div>
+                                    <field name="partner_id"/>
+                                </div>
+                                <div t-if="record.sla_deadline.raw_value">
+                                    <t t-if="new Date(record.sla_deadline.raw_value) &lt; (new Date())" t-set="red" t-value="'oe_kanban_text_red'"/>
+                                    <span class="fa fa-clock-o" title="Deadline" role="img" aria-label="Deadline"/>
+                                    <span t-attf-class="{{red}}">
+                                        <field name="sla_deadline" widget="remaining_days"/>
+                                    </span>
+                                </div>
+                                <div class="o_kanban_record_bottom">
+                                    <div class="oe_kanban_bottom_left">
+                                        <field name="priority" widget="priority"/>
+                                    </div>
+                                    <div class="oe_kanban_bottom_right">
+                                        <field name="activity_ids" widget="kanban_activity"/>
+                                        <field name="kanban_state" widget="state_selection" groups="base.group_user"/>
+                                        <field name="res_user_id" widget="many2one_avatar_user"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oe_clear"></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+        <record id="helpdesk_ticket_view_kanban_no_create" model="ir.ui.view">
+        <field name="name">aagam.helpdesk.ticket.kanban.no.create</field>
+        <field name="model">aagam.helpdesk.ticket</field>
+        <field name="priority">100</field>
+        <field name="inherit_id" ref="website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban"/>
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <xpath expr="//kanban[hasclass('o_kanban_small_column')]" position="attributes">
+                <attribute name="create">0</attribute>
+                <attribute name="group_create">0</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+        <record id="aagam_helpdesk_ticket_action" model="ir.actions.act_window">
+        <field name="name">Tickets</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">aagam.helpdesk.ticket</field>
+        <field name="view_mode">tree,kanban,form,pivot</field>
+        </record>
+
+       <record id="helpdesk_ticket_action_main" model="ir.actions.act_window">
+        <field name="name">All Tickets</field>
+        <field name="res_model">aagam.helpdesk.ticket</field>
+        <field name="view_mode">kanban,tree,form,activity,graph</field>
+        <field name="search_view_id" ref="helpdesk_tickets_view_search"/>
+        <field name="view_id" ref="website_support_ticket_odoo_aagam.helpdesk_ticket_view_kanban_no_create"/>
+        <field name="context">{'search_default_my_ticket': True, 'search_default_is_open': True}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first ticket.
+            </p>
+            <p>To get things done, use activities and status on tickets.
+                <br/>
+                Chat in real time or by email to collaborate efficiently.
+            </p>
+        </field>
+    </record>
+
+        <record id="action_helpdesk_ticket_my" model="ir.actions.act_window">
+        <field name="name">My Tickets</field>
+        <field name="res_model">aagam.helpdesk.ticket</field>
+        <field name="view_mode">list,kanban,form,activity,calendar,pivot,graph</field>
+        <field name="search_view_id" ref="helpdesk_tickets_view_search"/>
+        <field name="context">{'search_default_my_ticket': True, 'search_default_is_open': True}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No tickets found. Let's create one!
+                </p><p>To get things done, use activities and status on tickets. <br/>
+                Chat in real time or by email to collaborate efficiently.
+            </p>
+        </field>
+    </record>
+
+         <menuitem id="aagam_helpdesk_ticket_menu" name="Tickets" parent="main_menu_helpdesk_ticket"  sequence="10"/>
+        <menuitem id="helpdesk_ticket_menu_all" name="All Tickets" action="helpdesk_ticket_action_main"
+        sequence="20" parent="aagam_helpdesk_ticket_menu"/>
+         <menuitem id="aagam_helpdesk_my_ticket_menu" name="My Tickets" parent="aagam_helpdesk_ticket_menu" action="action_helpdesk_ticket_my" sequence="10"/>
+
+    </data>
+</odoo>
