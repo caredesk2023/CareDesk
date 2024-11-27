@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="r1_sales_report_extension" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//span[@t-field='line.product_uom']" position="replace">
+                <span t-field="line.product_uom" style="display:none;"/>
+            </xpath>
+            <xpath expr="//span[@t-field='line.discount']" position="replace">
+                <span t-esc="'{:,.0f}'.format(line.discount).replace(',', '.') if not line.discount  % 1 else '{:,.2f}'.format(line.discount).replace(',', 't').replace('.', ',').replace('t', '.')"/>
+            </xpath>
+            <xpath expr="//th[@name='th_discount']/span" position="replace">
+                <span>Disc.</span>
+            </xpath>
+        </template>
+    </data>
+</odoo>
