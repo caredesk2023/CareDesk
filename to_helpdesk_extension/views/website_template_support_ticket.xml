@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="helpdesk_incident_form" name="incident">
+        <div class="row to_div_27" id="incident_1">
+
+            <div class="col-12 to_div_25">
+                <div class="to_div_23">
+                    <t t-esc="ticket.helpdesk_ticket_type_id.name"/>
+<!--                    <span id="helpdesk_ticket_number"><t t-esc="ticket.number"/></span>-->
+                </div>
+            </div>
+
+            <div class="col-12 to_div_26">
+                <div class="to_div_24">
+                    <div class="col-12 to_div_28" id="ticket_identification">
+                        <p class="to_p_11"><t t-esc="ticket.name"/></p>
+                        <t t-set="counter" t-value="1"/>
+                        <t t-foreach="ticket.support_requests_ids" t-as="requests">
+                            <t t-if="counter > 1">
+                                <div class="to_div_43">
+                                    <i class="fa fa-long-arrow-right to_i_6" aria-hidden="true"></i>
+                                    <span class="to_span_11" t-esc="requests.create_date.strftime('%d-%m-%Y %H:%M')"/>
+                                </div>
+                                <div class="to_div_42">
+                                    <i class="fa fa-reply-all fa-6 fa-rotate-180 to_i_5" aria-hidden="true"></i>
+                                    <span class="to_span_10"><t t-esc="requests.description" style="margin: 0px !important;"/></span>
+                                </div>
+
+<!--                                <span><t t-esc="time.strptime(requests.create_date, '%Y-%m-%d %H:%M:%S')"/>-->
+<!--                                    </span>-->
+
+                            </t>
+                            <t t-else="">
+                                <p class="to_p_1"><t t-esc="requests.description"/></p>
+                            </t>
+                            <t t-set="counter" t-value="counter + 1"/>
+                        </t>
+                    </div>
+
+<!--                    <div class="col-12 to_div_30">-->
+<!--                        <div class="col-4 to_div_29">-->
+<!--                            <p><t t-esc="ticket_priority"/></p>-->
+<!--                        </div>-->
+<!--                        <div class="col-4 to_div_29">-->
+<!--                            <p><t t-esc="ticket.helpdesk_ticket_type_id.name"/></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="support_ticket" name="Support ticket">
+        <t t-call="website.layout">
+            <div class="container-fluid to_div_41">
+                <div id="template_support_ticket" class="container to_div_22">
+                    <form class="to_form_2">
+
+                        <p class="to_p_10"><span>Ticket #: </span><t t-esc="ticket.number"/></p>
+
+                        <t t-call="to_helpdesk_extension.helpdesk_incident_form"/>
+
+                        <div class="col-12 to_div_34">
+                            <button type="button" class="btn btn-secondary to_button_3" id="add_incident">Add incident</button>
+                        </div>
+
+                        <div class="container to_div_32">
+                            <div t-attf-class="mx-auto #{readableClass}">
+                                <div id="o_wblog_post_comments" t-attf-class="pt-4 o_container_small to_div_31">
+                                    <!--<div groups="base.group_public" class="small mb-4">
+                                        <a t-attf-href="/web/login?redirect=/blog/{{slug(blog_post.blog_id)}}/{{slug(blog_post)}}#discussion" class="btn btn-sm btn-primary"><b>Sign in</b></a> to leave a comment
+                                    </div>-->
+                                    <t t-call="portal.message_thread">
+                                        <t t-set="object" t-value="ticket"/>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </t>
+
+    </template>
+</odoo>

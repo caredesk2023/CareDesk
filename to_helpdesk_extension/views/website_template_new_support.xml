@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="new_support_ticket" name="New support">
+        <t t-call="website.layout">
+
+            <div class="container-fluid to_div_39">
+                <div id="template_new_support_ticket" class="container to_div_22">
+                    <form class="to_form_1">
+
+                        <p class="to_p_9"><span>Nuevo ticket</span></p>
+
+                        <div class="col-12 to_div_28">
+                            <input rows="4" class="form-control to_input_2" id="input_title" aria-describedby="emailHelp" placeholder="Title"/>
+                            <textarea type="text" class="form-control to_input_2" id="input_description" aria-describedby="emailHelp" placeholder="Description"/>
+                        </div>
+
+                        <div class="col-12 to_div_40">
+                            <button id="btn_save_ticket" type="button" class="btn btn-primary to_button_2">
+                                <span>Save</span>
+                            </button>
+                        </div>
+
+<!--                        <div class="row to_div_27">-->
+
+<!--                            <div class="col-12 to_div_25">-->
+<!--                                <div class="to_div_23">-->
+<!--                                    <span>New Ticket</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-12 to_div_26">-->
+<!--                                <div class="to_div_24">-->
+
+<!--                                    -->
+<!--                                    &lt;!&ndash;<div class="col-12 to_div_30">-->
+<!--                                        <div class="col-4 to_div_29">-->
+<!--                                            <select id="ticket_priority" class="form-select to_select_2 to_select_3a" aria-label="Default select example">-->
+<!--                                                <option t-att-value="False"><span>Priority</span></option>-->
+<!--                                                <t t-foreach="priorities" t-as="priority">-->
+<!--                                                    <option t-att-value="priority"><t t-esc="priorities[priority]"/></option>-->
+<!--                                                </t>-->
+<!--                                            </select>-->
+<!--                                        </div>-->
+
+<!--                                        <div class="col-4 to_div_29">-->
+<!--                                            <select id="ticket_type" class="form-select to_select_2 to_select_3a" aria-label="Default select example">-->
+<!--                                                <option t-att-value="False">Ticket Type</option>-->
+<!--                                                <t t-foreach="support_type" t-as="type">-->
+<!--                                                    <option t-att-value="type.id"><t t-esc="type.name"/></option>-->
+<!--                                                </t>-->
+<!--                                            </select>-->
+<!--                                        </div>-->
+
+<!--                                    </div>&ndash;&gt;-->
+
+<!--                                    -->
+
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+                    </form>
+                </div>
+            </div>
+
+        </t>
+    </template>
+</odoo>

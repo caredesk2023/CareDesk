@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template id="website_support_tickets_home" xml:space="preserve">
+
+    <t t-name="to_helpdesk_extension.support_ticket_list">
+        <t t-if="tickets.ticket_account">
+            <t t-foreach="tickets.open_tickets" t-as="ticket">
+                <div class="container to_div_9">
+
+                    <div class="to_div_7">
+                        <h1><t t-set="color" t-value="ticket.stage_color"/> </h1>
+                        <div class="col-lg-8 col-sm-6 to_div_10">
+                            <span class="to_span_3"><t t-esc="ticket.number"/></span>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 to_div_11">
+                            <span class="to_span_4" t-att-style="'background-color:' + color + ' !important'"><t t-esc="ticket.helpdesk_stage_id"/></span>
+                        </div>
+                    </div>
+
+                    <div class="to_div_8">
+                        <div class="col-12 to_div_33"><span class="to_span_5"><t t-esc="ticket.name"/> </span></div>
+                        <div class="col-12 to_div_12"><span class="to_span_6"><t t-esc="ticket.description"/> </span></div>
+                        <div class="col-12 to_div_13">
+                            <a t-attf-href="/support/ticket/#{ticket.number}" class="to_a_5">
+                                <button type="button" class="btn btn-light to_button_1">View Ticket</button>
+                            </a>
+                            </div>
+                    </div>
+
+                </div>
+            </t>
+        </t>
+        <t t-else="">
+            <div class="to_div_38">
+                <p class="to_p_7"><i class="fa fa-ticket to_i_4"></i></p>
+                <p class="to_p_8">No hay tickets creados</p>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="to_helpdesk_extension.helpdesk_stages">
+        <select class="form-control to_select_1" id="select_helpdesk_stage">
+            <option class="helpdesk_stage" t-att-data-stage="all_tickets">All tickets</option>
+            <t t-foreach="tickets.stages_result" t-as="stage">
+                <option class="helpdesk_stage"
+                        t-att-data-stage="stage"
+                        t-att-selected="(tickets.website_input_stage === stage)? true : undefined"
+                ><t t-esc="stage"/></option>
+            </t>
+        </select>
+
+    </t>
+
+    <t t-name="to_helpdesk_extension.website_support_messages">
+        <t t-if="result.messages_account > 0">
+            <t t-foreach="result.messages" t-as="message">
+                <div>
+                    <p class="to_p_2"><t t-esc="message.subject"/></p>
+                    <p class="to_p_3">
+                        <i class="fa fa-clock-o to_i_1" role="img" aria-label="Date" title="Date"/>
+                        <t t-esc="message.create_date"/>
+                    </p>
+                    <p class="to_p_4">
+                        <i class='fa fa-envelope-o to_i_2'></i>
+                        <t t-esc="message.body"/>
+                    </p>
+                </div>
+            </t>
+        </t>
+        <t t-else="">
+            <p class="to_p_6"><i class='fa fa-envelope-o to_i_3'></i></p>
+            <p class="to_p_5">No hay mensajes</p>
+        </t>
+
+    </t>
+
+</template>

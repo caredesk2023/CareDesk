@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="website_template_support" name="Support">
+        <t t-call="website.layout">
+            <div class="container-fluid to_div_37">
+                <div id="to_helpdesk_ticket_support" style="background-color:white" class="container to_div_2">
+
+                    <div class="row to_padding_1 to_carousel_2">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner to_carousel_1">
+                                <div class="carousel-item active">
+                                    <div class="to_div_3">
+                                        <div class="form-group has-search to_div_1">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span>
+                                                            <h3 class="to_h1_1">Welcome to the Support and Assistance Center</h3>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 to_div_4">
+                                                        <span class="fa fa-search form-control-feedback to_span_1"/>
+                                                        <input id="search_ticket" type="text" class="form-control to_input_1" placeholder="Search ticket by ticket number or support title"/>
+                                                        <a href="/support/ticket/new" class="to_a_1">
+                                                            <button id="create_ticket" type="button" class="btn btn-primary to_btn_1">
+                                                                <i class="fa fa-plus" aria-hidden="true"/>
+                                                                <span class="to_span_2">Create</span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="d-block w-100 to_img_1" src="/to_helpdesk_extension/static/src/img/img_3.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row to_padding_1">
+
+                        <div class="col-4 to_div_21">
+                            <i class='fa fa-inbox'/><span class="to_span_9">Messages</span>
+                        </div>
+
+                        <div class="col-lg-8 col-sm-12 to_div_19">
+
+                            <div class="col-lg-8 col-sm-12 to_div_20">
+                                <nav aria-label="Navegación de página - Helpdesk">
+                                    <ul class="pagination justify-content-end to_lu_1" id="insert_pagination">
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-12 to_div_18">
+                                <div>
+                                    <span class="to_span_7">Tickets:</span>
+                                </div>
+                                <div id="helpdesk_stage"/>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 d-none d-sm-block">
+                            <div class="to_div_15">
+                                <div class="to_div_14">
+                                    <div class="container">
+                                        <div id="user_messages"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-8 col-sm-12 to_div_5">
+                            <div id="list_tickets"/>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </t>
+    </template>
+
+    <data noupdate="1">
+
+        <record id="website_page_template_support" model="website.page">
+            <field name="is_published">True</field>
+            <field name="url">/support/tickets</field>
+            <field name="view_id" ref="website_template_support"/>
+            <field name="track">True</field>
+        </record>
+
+        <record id="website_menu_template_support" model="website.menu">
+            <field name="name">Support</field>
+            <field name="url">/support/tickets</field>
+            <field name="page_id" ref="website_page_template_support"/>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">10000</field>
+        </record>
+
+    </data>
+
+
+</odoo>

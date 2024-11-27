@@ -1,0 +1,598 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* to_helpdesk_extension
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-23 15:28+0000\n"
+"PO-Revision-Date: 2024-01-23 15:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.new_support_ticket
+msgid "<i class=\"fa fa-floppy-o\" aria-hidden=\"true\"> Save</i>"
+msgstr "<i class=\"fa fa-floppy-o\" aria-hidden=\"true\"> Guardar</i>"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.website_template_support
+#: model_terms:website.page,arch_db:to_helpdesk_extension.website_page_template_support
+msgid ""
+"<i class=\"fa fa-plus\" aria-hidden=\"true\"/>\n"
+"                                                            <span class=\"to_span_2\">Create</span>"
+msgstr ""
+"<i class=\"fa fa-plus\" aria-hidden=\"true\"/>\n"
+"                                                            <span class=\"to_span_2\">Crear</span>"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.to_aagam_helpdesk_ticket_inherit_1228
+msgid "<span class=\"ml8\">hours</span>"
+msgstr "<span class=\"ml8\">horas</span>"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.website_template_support
+#: model_terms:website.page,arch_db:to_helpdesk_extension.website_page_template_support
+msgid "<span class=\"to_span_7\">Tickets:</span>"
+msgstr "<span class=\"to_span_7\">Tickets:</span>"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.website_template_support
+#: model_terms:website.page,arch_db:to_helpdesk_extension.website_page_template_support
+msgid "<span>Messages</span>"
+msgstr "Mensajes"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.new_support_ticket
+msgid "<span>New Ticket</span>"
+msgstr "Ticket"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.new_support_ticket
+msgid "<span>Priority</span>"
+msgstr "Prioridad"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_needaction
+msgid "Action Needed"
+msgstr "Acción necesaria"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Excepción de actividad de decoración"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_state
+msgid "Activity State"
+msgstr "Estado de actividad"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icono de tipo de actividad"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.support_ticket
+msgid "Add incident"
+msgstr "Añadir incidencia"
+
+#. module: to_helpdesk_extension
+#. openerp-web
+#: code:addons/to_helpdesk_extension/static/src/xml/support_ticket_list.xml:0
+#, python-format
+msgid "All tickets"
+msgstr "Todos los tickets"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.aagam_helpdesk_ticket_maintenance_equipment_0311
+msgid "Assign To User"
+msgstr "Asignar al usuario"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__assign_date
+msgid "Assigned Date"
+msgstr "Fecha de asignación"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_attachment_count
+msgid "Attachment Count"
+msgstr "Recuento de archivos adjuntos"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_category_id
+msgid "Category"
+msgstr "Categoría"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__color
+msgid "Color Index"
+msgstr "Indice de color"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__cost
+msgid "Cost"
+msgstr "Coste"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_created_by
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__create_uid
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment_category__create_uid
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_types_maintenance__create_uid
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_helpdesk_support_requests__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__create_date
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment_category__create_date
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_types_maintenance__create_date
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_helpdesk_support_requests__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.new_support_ticket
+msgid "Default select example"
+msgstr "Ejemplo de selección por defecto"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.aagam_helpdesk_ticket_maintenance_equipment_0337
+msgid "Delete"
+msgstr "Eliminar"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_description
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_helpdesk_support_requests__description
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.aagam_helpdesk_ticket_maintenance_equipment_0322
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.new_support_ticket
+msgid "Description"
+msgstr "Descripción"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__display_name
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment_category__display_name
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_types_maintenance__display_name
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_helpdesk_support_requests__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.aagam_helpdesk_ticket_maintenance_equipment_0337
+msgid "Dropdown menu"
+msgstr "Menú desplegable"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_duration
+msgid "Duration"
+msgstr "Duración"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.aagam_helpdesk_ticket_maintenance_equipment_0337
+msgid "Edit..."
+msgstr "Editar..."
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__effective_date
+msgid "Effective Date"
+msgstr "Fecha efectiva"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__category_id
+msgid "Equipment Category"
+msgstr "Categoría del equipo"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__name
+msgid "Equipment Name"
+msgstr "Nombre del equipo"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_follower_ids
+msgid "Followers"
+msgstr "Estado"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Socios)"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__has_message
+msgid "Has Message"
+msgstr "Tiene Mensaje"
+
+#. module: to_helpdesk_extension
+#: model:ir.model,name:to_helpdesk_extension.model_helpdesk_support_requests
+msgid "Helpdesk Support Requests"
+msgstr "Solicitudes de asistencia técnica"
+
+#. module: to_helpdesk_extension
+#: model:ir.model,name:to_helpdesk_extension.model_aagam_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Ticket de asistencia"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields.selection,name:to_helpdesk_extension.selection__aagam_helpdesk_ticket__maintenance_priority__3
+msgid "High"
+msgstr "Alta"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__id
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment_category__id
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_types_maintenance__id
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_helpdesk_support_requests__id
+msgid "ID"
+msgstr "ID"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una actividad excepcional."
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_needaction
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcada, nuevos mensajes requieren su atención."
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_has_error
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcada, algunos mensajes tienen un error de entrega."
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.to_aagam_helpdesk_ticket_inherit_1228
+msgid "Internal Notes"
+msgstr "Notas internas"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_is_follower
+msgid "Is Follower"
+msgstr "Seguidor"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment____last_update
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment_category____last_update
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_types_maintenance____last_update
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_helpdesk_support_requests____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__write_uid
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment_category__write_uid
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_types_maintenance__write_uid
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_helpdesk_support_requests__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__write_date
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment_category__write_date
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_types_maintenance__write_date
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_helpdesk_support_requests__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__location
+msgid "Location"
+msgstr "Usado en la ubicación"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields.selection,name:to_helpdesk_extension.selection__aagam_helpdesk_ticket__maintenance_priority__1
+msgid "Low"
+msgstr "Bajo"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjunto principal"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.to_aagam_helpdesk_ticket_inherit_1228
+msgid "Maintenance"
+msgstr "Mantenimiento"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de entrega del mensaje"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__model
+msgid "Model"
+msgstr "Modelo"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Mi actividad Plazo"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment_category__name
+msgid "Name category"
+msgstr "Nombre de categoría"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.website_template_support
+#: model_terms:website.page,arch_db:to_helpdesk_extension.website_page_template_support
+msgid "Navegación de página - Helpdesk"
+msgstr "Navegación de página - Helpdesk"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Fecha límite para la próxima actividad"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la próxima actividad"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields.selection,name:to_helpdesk_extension.selection__aagam_helpdesk_ticket__maintenance_priority__2
+msgid "Normal"
+msgstr "Normal"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leídos"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_priority
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.aagam_helpdesk_ticket_maintenance_equipment_0322
+msgid "Product Information"
+msgstr "Información del producto"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.aagam_helpdesk_ticket_maintenance_equipment_0337
+msgid "Record Colour"
+msgstr "Colores"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_name
+msgid "Request"
+msgstr "Solicitud"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_request_date
+msgid "Request Date"
+msgstr "Fecha de solicitud"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_user_id
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de entrega de SMS"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_schedule_date
+msgid "Scheduled Date"
+msgstr "Fecha prevista"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__scrap_date
+msgid "Scrap Date"
+msgstr "Fecha de deshecho"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.website_template_support
+#: model_terms:website.page,arch_db:to_helpdesk_extension.website_page_template_support
+msgid "Search ticket by ticket number or support title"
+msgstr "Buscar ticket por número de ticket o título de soporte"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__serial_no
+msgid "Serial Number"
+msgstr "Nº de serie"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades\n"
+"Atrasado: La fecha de vencimiento ya ha pasado\n"
+"Hoy: La fecha de la actividad es hoy\n"
+"Planificadas: Actividades futuras."
+
+#. module: to_helpdesk_extension
+#: model:website.menu,name:to_helpdesk_extension.website_menu_template_support
+msgid "Support"
+msgstr "Soporte"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__support_requests_ids
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.to_aagam_helpdesk_ticket_inherit_1228
+msgid "Support requests"
+msgstr "Solicitudes de asistencia"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_equipment_id
+msgid "Team"
+msgstr "Equipo"
+
+#. module: to_helpdesk_extension
+#: model:ir.actions.act_window,name:to_helpdesk_extension.aagam_helpdesk_equipment_teams_action_0214
+#: model:ir.ui.menu,name:to_helpdesk_extension.aagam_helpdesk_ticket_menu_teams_0218
+msgid "Teams"
+msgstr "Equipos"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__technician_user_id
+msgid "Technician"
+msgstr "Técnico"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_helpdesk_support_requests__ticket_id
+msgid "Ticket ID"
+msgstr "Ticket ID"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.new_support_ticket
+msgid "Ticket Type"
+msgstr "Tipo de ticket"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.new_support_ticket
+msgid "Title"
+msgstr "Título"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket__maintenance_types_maintenance_id
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_types_maintenance__types_maintenance_name
+msgid "Type of maintenance"
+msgstr "Tipo de mantenimiento"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de actividad de excepción registrada."
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes no leídos"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes no leídos"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__partner_id
+msgid "Vendor"
+msgstr "Proveedor"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__partner_ref
+msgid "Vendor Reference"
+msgstr "Referencia de proveedor"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields.selection,name:to_helpdesk_extension.selection__aagam_helpdesk_ticket__maintenance_priority__0
+msgid "Very Low"
+msgstr "Muy baja"
+
+#. module: to_helpdesk_extension
+#. openerp-web
+#: code:addons/to_helpdesk_extension/static/src/xml/support_ticket_list.xml:0
+#, python-format
+msgid "View Ticket"
+msgstr "Ver Ticket"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__warranty_date
+msgid "Warranty Expiration Date"
+msgstr "Fecha Expiración Garantía"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,field_description:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: to_helpdesk_extension
+#: model:ir.model.fields,help:to_helpdesk_extension.field_aagam_helpdesk_ticket_maintenance_equipment__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicación del sitio web"
+
+#. module: to_helpdesk_extension
+#: model_terms:ir.ui.view,arch_db:to_helpdesk_extension.website_template_support
+#: model_terms:website.page,arch_db:to_helpdesk_extension.website_page_template_support
+msgid "Welcome to the Support and Assistance Center"
+msgstr "Bienvenido al Centro de Soporte y Asistencia"
+
+#. module: to_helpdesk_extension
+#: model:ir.model,name:to_helpdesk_extension.model_aagam_helpdesk_ticket_maintenance_equipment
+msgid "aagam.helpdesk.ticket.maintenance.equipment"
+msgstr ""
+
+#. module: to_helpdesk_extension
+#: model:ir.model,name:to_helpdesk_extension.model_aagam_helpdesk_ticket_maintenance_equipment_category
+msgid "aagam.helpdesk.ticket.maintenance.equipment.category"
+msgstr ""
+
+#. module: to_helpdesk_extension
+#: model:ir.model,name:to_helpdesk_extension.model_aagam_helpdesk_ticket_types_maintenance
+msgid "aagam.helpdesk.ticket.types.maintenance"
+msgstr ""

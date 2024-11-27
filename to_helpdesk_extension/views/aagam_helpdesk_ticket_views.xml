@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <record id="to_aagam_helpdesk_ticket_inherit_1228" model="ir.ui.view">
+            <field name="name">TO aagam helpdesk ticket maintenance request inherit 1228</field>
+            <field name="model">aagam.helpdesk.ticket</field>
+            <field name="inherit_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk_ticket_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//page[@name='description']" position="before">
+                    <page string="Support requests" name="support_requests">
+                        <field name="support_requests_ids">
+                            <tree editable="bottom" create="0" delete="0">
+                                <field name="description" readonly="1" force_save="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+
+                <xpath expr="//page[5]" position="after">
+                    <page string="Maintenance">
+                        <form>
+                            <sheet>
+                                <group col="2">
+                                    <group>
+                                        <field name="maintenance_created_by"/>
+                                        <field name="maintenance_equipment_id"/>
+                                        <field name="maintenance_category_id" attrs="{'invisible':[('maintenance_equipment_id','=',False)]}"/>
+                                        <field name="maintenance_request_date"/>
+                                        <field name="maintenance_types_maintenance_id"/>
+                                    </group>
+                                    <group>
+                                        <field name="maintenance_user_id"/>
+                                        <field name="maintenance_schedule_date"/>
+                                        <label for="maintenance_duration"/>
+                                        <div>
+                                            <field name="maintenance_duration" widget="float_time" class="oe_inline"/> <span class="ml8">hours</span>
+                                        </div>
+                                        <field name="maintenance_priority" widget="priority"/>
+                                    </group>
+                                </group>
+                                <div style="padding-top:2%;">
+                                    <group>
+                                        <field name="maintenance_description" placeholder="Internal Notes"/>
+                                    </group>
+                                </div>
+                            </sheet>
+                        </form>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="aagam_helpdesk_equipment_teams_action_0214" model="ir.actions.act_window">
+            <field name="name">Teams</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">aagam.helpdesk.ticket.maintenance.equipment</field>
+            <field name="view_mode">kanban,form,tree</field>
+        </record>
+
+        <menuitem
+                id="aagam_helpdesk_ticket_menu_teams_0218"
+                name="Teams"
+                parent="website_support_ticket_odoo_aagam.main_menu_helpdesk_ticket"
+                action="to_helpdesk_extension.aagam_helpdesk_equipment_teams_action_0214"
+                sequence="10"/>
+
+    </data>
+</odoo>

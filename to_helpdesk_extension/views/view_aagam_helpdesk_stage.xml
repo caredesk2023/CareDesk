@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <record id="to_aagam_helpdesk_stage_form_0214" model="ir.ui.view">
+            <field name="name">TO aagam helpdesk stage form extension</field>
+            <field name="model">aagam.helpdesk.stage</field>
+            <field name="mode">extension</field>
+            <field name="inherit_id" ref="website_support_ticket_odoo_aagam.aagam_helpdesk__stage_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='not_start']" position="after">
+                    <field name="color" widget="color_picker"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
